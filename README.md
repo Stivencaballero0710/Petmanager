@@ -1,1 +1,0 @@
-# Proyecto-veterinaria-G1-2026-2
