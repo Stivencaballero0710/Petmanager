@@ -36,6 +36,8 @@
 
 - **Vacunación** Control de las vacunas aplicado a cada mascota, registrando el tipo de vacuna, fecha de aplicación, lote, profesional responsable y próxima dosis programada. 
 
+- **Hospitalización:** Registro de las mascotas que requieren permanecer en la clínica para observación o tratamiento. Incluye fecha de ingreso, diagnóstico, estado del paciente, medicamentos administrados y fecha de egreso.
+
 ---
 
 ## 2. Tendencias Actuales en el Sector
