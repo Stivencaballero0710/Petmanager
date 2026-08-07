@@ -28,7 +28,8 @@
 
 * **Sistemas en la Nube:** Acceso remoto, seguro y sincronizado a las agendas e historias clinicas desde multiples dispositivos y sedes.
 * **Integracion de Procesos:** Plataformas unificadas que centralizan la agenda, la clinica, el inventario y la facturacion para evitar duplicidad de datos.
-* **Recordatorios Automatizados:** Notificaciones automaticas mediante mensajeria para citas, vacunas y chequeos medicos pendientes.
+* **Recordatorios Automatizados:** Notificacio
+nes automaticas mediante mensajeria para citas, vacunas y chequeos medicos pendientes.
 * **Uso de Inteligencia Artificial:** Herramientas de apoyo para la transcripcion de consultas y analisis de imagenes, sujetas siempre a la supervision veterinaria.
 * **Gestion Predictiva de Inventario:** Automatizacion para descontar insumos usados y alertar sobre productos proximos a vencer o con bajo stock.
 
@@ -41,6 +42,9 @@
 * **VETport:** Ofrece flujos configurables orientados a la versatilidad para clinicas moviles o con multiples sedes.
 * **DVMAX Cloud:** Enfocada en la simplificacion operativa diaria, personalizacion de historiales y pagos integrados.
 
+---
+## Imagen alusiva a la veterinaria
+![Veterinaria](Files/vet1.png)
 ---
 
 ## Referencias Bibliograficas
