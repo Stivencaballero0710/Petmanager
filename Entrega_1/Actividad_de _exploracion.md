@@ -34,6 +34,8 @@
 
 - **Diagnóstico, tratamiento y prescripción:** Permite almacenar las enfermedades identificadas, medicamentos formulados, dosis, frecuencia, duración del tratamiento y recomendaciones realizadas por el profesional.
 
+- **Vacunación** Control de las vacunas aplicado a cada mascota, registrando el tipo de vacuna, fecha de aplicación, lote, profesional responsable y próxima dosis programada. 
+
 ---
 
 ## 2. Tendencias Actuales en el Sector
