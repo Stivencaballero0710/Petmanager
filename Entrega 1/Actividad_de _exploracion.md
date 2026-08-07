@@ -11,15 +11,16 @@
 
 ## 1. Conceptos Fundamentales
 
-* **Propietario o Responsable:** Persona encargada del animal que autoriza su atencion. Un propietario puede registrar multiples mascotas (relacion 1:N). Sus datos personales deben protegerse conforme a la normativa vigente.
-* **Paciente (Mascota):** Animal domestico atendido. Almacena nombre, especie, raza, sexo, edad, color, peso, microchip y alergias.
-* **Historia Clinica Veterinaria:** Registro cronologico obligatorio, privado y reservado que vincula signos vitales, consultas, diagnosticos, tratamientos, procedimientos y la evolucion del paciente.
-* **Cita y Atencion:** La cita gestiona la reserva de fecha, hora y profesional, mientras que la atencion registra los eventos reales ocurridos durante la consulta.
-* **Servicio Veterinario:** Actividades ofrecidas (consulta, cirugia, laboratorio, hospitalizacion, vacunacion) configurables para activarse, desactivarse o cambiar de precio.
-* **Consentimiento Informado:** Autorizacion firmada por el propietario para procedimientos de riesgo como cirugias o anestesia.
+* **Propietario o Responsable:** Persona encargada del animal que autoriza su atención. Un propietario puede registrar múltiples mascotas (relacion 1:N). Sus datos personales deben protegerse conforme a la normativa vigente.
+* **Paciente (Mascota):** Animal doméstico atendido. Almacena información como nombre, especie, raza, sexo, edad, color, peso y alergias.
+* **Historia Clinica Veterinaria:** Registro cronológico obligatorio, privado y reservado que vincula signos vitales, consultas, diagnósticos, tratamientos, procedimientos y la evolución del paciente.
+* **Cita y Atención:** La cita gestiona la reserva de fecha, hora y profesional, mientras que la atención registra los eventos reales ocurridos durante la consulta.
+* **Servicio Veterinario:** Actividad ofrecida por la clínica, como consulta, cirugía, laboratorio, hospitalización o vacunación. Los servicios pueden activarse, desactivarse o cambiar de precio.
+* **Consentimiento Informado:** Autorización firmada por el propietario para procedimientos de riesgo como cirugías o aplicación de anestesia.
 * **Inventario y Farmacia:** Control riguroso de medicamentos, vacunas e insumos, registrando cantidades, lotes, proveedores y fechas de vencimiento.
-* **Facturacion y Pagos:** Modulo que registra los servicios prestados, productos vendidos, valores totales y medios de pago utilizados.
+* **Facturacion y Pagos:** Modulo que registra los servicios prestados, productos vendidos, valores totales y medios de pago utilizados(efectivo, tarjeta de credito, tarjeta debito, addi, sistecredito).
 * **Seguridad y Privacidad:** Control de acceso mediante usuarios, roles, permisos, respaldos de informacion y auditorias del sistema.
+* **Diagnóstico, Tratamiento y preescripción:** Almacena enfermedades identificadas, medicamentos formulados, dosis, frecuencia, duración y recomendaciones.
 
 ---
 
@@ -27,7 +28,8 @@
 
 * **Sistemas en la Nube:** Acceso remoto, seguro y sincronizado a las agendas e historias clinicas desde multiples dispositivos y sedes.
 * **Integracion de Procesos:** Plataformas unificadas que centralizan la agenda, la clinica, el inventario y la facturacion para evitar duplicidad de datos.
-* **Recordatorios Automatizados:** Notificaciones automaticas mediante mensajeria para citas, vacunas y chequeos medicos pendientes.
+* **Recordatorios Automatizados:** Notificacio
+nes automaticas mediante mensajeria para citas, vacunas y chequeos medicos pendientes.
 * **Uso de Inteligencia Artificial:** Herramientas de apoyo para la transcripcion de consultas y analisis de imagenes, sujetas siempre a la supervision veterinaria.
 * **Gestion Predictiva de Inventario:** Automatizacion para descontar insumos usados y alertar sobre productos proximos a vencer o con bajo stock.
 
@@ -40,6 +42,9 @@
 * **VETport:** Ofrece flujos configurables orientados a la versatilidad para clinicas moviles o con multiples sedes.
 * **DVMAX Cloud:** Enfocada en la simplificacion operativa diaria, personalizacion de historiales y pagos integrados.
 
+---
+## Imagen alusiva a la veterinaria
+![Veterinaria](Files/vet1.png)
 ---
 
 ## Referencias Bibliograficas
