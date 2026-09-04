@@ -3,9 +3,12 @@
 
 Grupo: G1
 
-Integrantes:
-- Andrés Felipe Rivera Carreño - 2250193
-- Carlos Iván Merlano Vergara - 2250188
-- Jannyer Stiven Caballero Domínguez - 2250191
-- Juan Sebastián Araujo Contreras - 2250142
-- Juan Pablo Vera Suárez - 2241807
+## Integrantes del grupo
+
+| # | Nombre completo | Código |
+|---|---|---|
+| 1 | **Jannyer Stiven Caballero Domnguez** | *2250191* |
+| 2 | [**Carlos Iván Merlano Vergara**] | *2250188* |
+| 3 | [**Andrés Felipe Rivera Carreño**] | *2250193* |
+| 4 | [**Juan Sebastián Araujo Contreras**] | *2250142* |
+| 5 | [**Juan Pablo Vera Suárez**] | *2241807* |
