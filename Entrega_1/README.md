@@ -1,29 +1,21 @@
-# Entrega 1 — Modelo conceptual (E-R)
+# Entrega 1 — PetManager
 
-Primera entrega del proyecto **PetManager**, un sistema de gestión para una clínica veterinaria enfocada en animales domésticos.
+Esta carpeta reúne el trabajo correspondiente a la primera etapa del proyecto.
 
----
-
-## Documento entregable
-
-**[`Entrega_Final_01/README.md`](Entrega_Final_01/README.md)**
-
-Este es el documento principal de la primera entrega.
-
-| # | Sección |
-|---|---------|
-| 1 | Contexto del problema trabajado en la actividad de exploración |
-| 2 | Consulta de tendencias actuales en el área del proyecto |
-| 3 | Consulta de herramientas o sistemas similares con su análisis de funcionalidades |
-| 4 | Referencias |
-| 5 | Anexo — Diagrama E-R de PetManager |
-
----
-
-## Material de apoyo
+## Organización interna
 
 | Carpeta | Contenido |
-|---------|-----------|
-| [`Actividad_de_Exploracion/`](Actividad_de_Exploracion/) | Desarrollo inicial de la actividad de exploración. |
-| [`Diagramas/`](Diagramas/) | Propuestas y modelo E-R del proyecto. |
-| [`Entrega_Final_01/`](Entrega_Final_01/) | Documento consolidado de la entrega. |
+|---|---|
+| [`Investigacion/`](Investigacion/) | Exploración del problema, conceptos del dominio, tendencias y herramientas existentes. |
+| [`Modelo/`](Modelo/) | Material relacionado con la construcción del modelo entidad-relación. |
+| [`Documento/`](Documento/) | Documento consolidado de la primera entrega. |
+
+## Temas desarrollados
+
+1. Contexto del problema y necesidades de información de una clínica veterinaria.
+2. Tendencias actuales del sector y su relación con el diseño de datos.
+3. Análisis de herramientas de gestión veterinaria existentes.
+4. Modelo entidad-relación de PetManager.
+5. Referencias utilizadas durante la exploración.
+
+Esta separación permite distinguir con claridad la investigación previa, el desarrollo del modelo y el documento consolidado.
