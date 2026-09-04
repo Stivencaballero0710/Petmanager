@@ -42,35 +42,43 @@
 
 ## 2. Tendencias Actuales en el Sector
 
-- **Sistemas en la nube:** Permiten el acceso remoto, seguro y sincronizado a agendas, historias clínicas y demás información desde múltiples dispositivos y sedes.
+El desarrollo de software para la gestión clínica veterinaria ha evolucionado hacia arquitecturas más robustas que permiten manejar un volumen dinámico de datos. Las tendencias más destacadas incluyen:
 
-- **Integración de procesos:** Uso de plataformas unificadas que centralizan la agenda, la gestión clínica, el inventario y la facturación, reduciendo la duplicidad de información.
+**Sistemas Nativos en la Nube y Escalabilidad Dinámica:** La migración de bases de datos locales a servicios en la nube (como PostgreSQL alojado en plataformas PaaS) permite que las clínicas escalen sus recursos informáticos dependiendo de la demanda, facilitando el acceso remoto, seguro y sincronizado desde múltiples sedes o dispositivos móviles.
 
-- **Recordatorios automatizados:** Envío automático de notificaciones mediante servicios de mensajería para recordar citas, vacunas y chequeos médicos pendientes.
+**Seguridad de Datos y Control de Acceso Basado en Roles (RBAC):** Ante la digitalización de historias clínicas y datos de facturación, los sistemas modernos implementan arquitecturas de confianza cero (Zero Trust) a nivel de base de datos. Esto incluye el enmascaramiento de datos sensibles de los propietarios y la asignación estricta de permisos según el rol del empleado (veterinario, administrador, recepcionista).
 
-- **Uso de inteligencia artificial:** Herramientas de apoyo para la transcripción de consultas, organización de información y análisis de imágenes, siempre bajo supervisión veterinaria.
+**Integración y Centralización de Procesos (Interoperabilidad):** Uso de plataformas unificadas que centralizan la agenda, el historial clínico, el inventario y la facturación en un modelo relacional cohesivo, eliminando la duplicidad de información y las trampas estructurales en el diseño de datos.
 
-- **Gestión predictiva de inventario:** Automatización del control de existencias para descontar insumos utilizados y generar alertas sobre productos próximos a vencer o con bajo nivel de stock.
+**Analítica de Datos y Business Intelligence (BI):** Implementación de módulos que consumen los datos transaccionales para generar reportes en tiempo real. Esto permite a las clínicas analizar horas pico de atención, enfermedades más comunes por temporada y rotación de inventario para la toma de decisiones.
 
----
+**Gestión Predictiva de Inventario y Automatización:** Automatización mediante triggers o procedimientos almacenados que descuentan insumos utilizados en tiempo real y generan alertas automáticas sobre productos próximos a vencer o con niveles críticos de stock.
+
+**Telemedicina Veterinaria y Recordatorios Automatizados:** Integración de APIs de mensajería para el envío automático de notificaciones de citas y vacunas, junto con la capacidad de registrar consultas virtuales en el modelo de datos de la historia clínica.
 
 ## 3. Herramientas de Referencia en el Mercado
 
-Como parte de la exploración inicial, se analizaron tres herramientas utilizadas para la gestión de clínicas veterinarias:
+Como parte de la exploración inicial para el diseño del modelo relacional, se analizaron herramientas líderes en el mercado, evaluando cómo estructuran sus funcionalidades principales:
 
 ### ezyVet
-
-Destaca por sus funciones avanzadas, su alto nivel de personalización y la generación de reportes detallados. Sin embargo, debido a la cantidad de funcionalidades que ofrece, puede presentar una mayor complejidad de uso y un costo elevado.
+Software de gestión integral basado en la nube, reconocido por su robustez en clínicas de gran tamaño y hospitales veterinarios.
+*   **Funcionalidades Clave:** Gestión clínica detallada, automatización de flujos de trabajo financieros, portal para clientes y control avanzado de inventario.
+*   **Análisis de Funcionalidades:** Destaca por su alto nivel de personalización y generación de reportes detallados. Desde la perspectiva de base de datos, maneja un modelo altamente relacional que vincula directamente los procedimientos clínicos con el módulo de facturación automáticamente. Sin embargo, su curva de aprendizaje es pronunciada y su costo es elevado para clínicas pequeñas.
 
 ### VETport
+Aplicación orientada a brindar versatilidad mediante flujos de trabajo configurables, ideal para clínicas móviles o con múltiples sedes.
+*   **Funcionalidades Clave:** Registros médicos electrónicos (EMR) personalizables, planes de bienestar, integraciones con laboratorios externos y comunicación omnicanal.
+*   **Análisis de Funcionalidades:** Su principal ventaja es la flexibilidad de su historia clínica, lo que sugiere el uso de esquemas de bases de datos dinámicos (como el modelo Entidad-Atributo-Valor) para permitir a los veterinarios crear plantillas propias. Facilita la consolidación de datos entre diferentes sucursales.
 
-Ofrece flujos de trabajo configurables y está orientado a brindar versatilidad a clínicas veterinarias, incluyendo aquellas que trabajan de manera móvil o cuentan con múltiples sedes.
+### Provet Cloud
+Sistema moderno de gestión veterinaria enfocado en la eficiencia operativa y la experiencia del usuario, fuertemente adoptado en Europa e ingresando al mercado latinoamericano.
+*   **Funcionalidades Clave:** Pizarra digital para hospitalización, triaje automatizado, gestión de tareas del personal e integración de pagos.
+*   **Análisis de Funcionalidades:** Sobresale en el manejo del estado transaccional de los pacientes (ej. seguimiento en tiempo real de una mascota en hospitalización). Esto requiere una base de datos optimizada para operaciones de lectura/escritura concurrentes.
 
 ### DVMAX Cloud
-
-Está orientado a simplificar las operaciones diarias de una clínica veterinaria mediante herramientas para la gestión de historiales clínicos, personalización de registros y manejo integrado de pagos.
-
----
+Orientado a simplificar las operaciones diarias hacia un modelo "sin papel" (paperless).
+*   **Funcionalidades Clave:** Tableros de tratamiento interactivos, sincronización de historiales médicos, y macros de texto para agilizar el ingreso de datos.
+*   **Análisis de Funcionalidades:** Se enfoca en la velocidad de captura de datos durante la consulta. Su arquitectura debe soportar la integridad referencial estricta para asegurar que ninguna prescripción o diagnóstico quede huérfano en el sistema al eliminar o modificar un registro temporal.
 
 ## 4. Referencias Bibliográficas
 
