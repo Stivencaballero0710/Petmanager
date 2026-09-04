@@ -11,11 +11,11 @@ Universidad Industrial de Santander · Escuela de Ingeniería de Sistemas e Info
 
 | # | Nombre completo | Código |
 |---|---|---|
-| 1 | [Nombre del integrante 1] | [Código] |
-| 2 | [Nombre del integrante 2] | [Código] |
-| 3 | [Nombre del integrante 3] | [Código] |
-| 4 | [Nombre del integrante 4] | [Código] |
-| 5 | [Nombre del integrante 5] | [Código] |
+| 1 | [Andrés Felipe Rivera Carreño] | [2250193] |
+| 2 | [Carlos Ivan Merlano Vergara] | [2250188] |
+| 3 | [Jannyer Stiven Caballero Domínguez] | [2250191] |
+| 4 | [Juan Sebastián Araujo Contreras] | [2250142] |
+| 5 | [Juan Pablo Vera Suárez] | [2241807] |
 
 ---
 
