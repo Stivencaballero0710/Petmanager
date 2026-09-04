@@ -12,10 +12,10 @@ Universidad Industrial de Santander · Escuela de Ingeniería de Sistemas e Info
 | # | Nombre completo | Código |
 |---|---|---|
 | 1 | **Jannyer Stiven Caballero Domnguez** | *2250191* |
-| 2 | [**Carlos Iván Merlano Vergara**] | *2250188* |
-| 3 | [**Andrés Felipe Rivera Carreño**] | *2250193* |
-| 4 | [**Juan Sebastián Araujo Contreras**] | *2250142* |
-| 5 | [**Juan Pablo Vera Suárez**] | *2241807* |
+| 2 | **Carlos Iván Merlano Vergara** | *2250188* |
+| 3 | **Andrés Felipe Rivera Carreño** | *2250193* |
+| 4 | **Juan Sebastián Araujo Contreras** | *2250142* |
+| 5 | **Juan Pablo Vera Suárez** | *2241807* |
 
 ---
 
