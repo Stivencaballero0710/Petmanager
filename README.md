@@ -1,6 +1,6 @@
 # Bases de Datos I — UIS
 
-Repositorio del proyecto **PetManager**, desarrollado para la asignatura **Bases de Datos I** de la Universidad Industrial de Santander.
+Repositorio del proyecto **PetManager**, desarrollado para la asignatura **Bases de Datos I**.
 
 **PetManager** propone una base de datos para apoyar la gestión de una clínica veterinaria enfocada en animales domésticos. El sistema reúne información de propietarios, mascotas, citas, historia clínica, diagnósticos, tratamientos, vacunación, exámenes, inventario, facturación, pagos y seguimiento.
 
