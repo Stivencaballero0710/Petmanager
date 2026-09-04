@@ -5,6 +5,10 @@ Universidad Industrial de Santander · Escuela de Ingeniería de Sistemas e Info
 
 > **PetManager** es el diseño de una base de datos para una clínica veterinaria enfocada en animales domésticos, integrando propietarios, mascotas, citas, historia clínica, tratamientos, vacunación, exámenes, inventario, facturación y seguimiento bajo un mismo modelo de datos.
 
+<p align="center">
+  <img src="./img/veterinaria.jpg" alt="Clínica veterinaria" width="700">
+</p>
+
 ---
 
 ## Integrantes del grupo
