@@ -11,7 +11,7 @@ Universidad Industrial de Santander · Escuela de Ingeniería de Sistemas e Info
 
 | # | Nombre completo | Código |
 |---|---|---|
-| 1 | Andrés Felipe Rivera Carreño | [2250193 |
+| 1 | Andrés Felipe Rivera Carreño | 2250193 |
 | 2 | Carlos Ivan Merlano Vergara | 2250188 |
 | 3 | Jannyer Stiven Caballero Domínguez | 2250191 |
 | 4 | Juan Sebastián Araujo Contreras | 2250142 |
