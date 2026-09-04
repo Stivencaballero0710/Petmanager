@@ -412,4 +412,4 @@ Plataforma veterinaria enfocada en historia clínica electrónica, automatizaci�
 
 ## 5. Anexo — Diagrama E-R de PetManager
 
-[Ver diagrama E-R de PetManager](./PrimeraEntregaParcial/DiagramaVetPrimeraEntrega.png)
+[Ver diagrama E-R de PetManager](./Entrega_1/DiagramaVetPrimeraEntrega.png)
