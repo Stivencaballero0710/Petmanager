@@ -1,8 +1,8 @@
 # Bases de Datos I — UIS
 
-Repositorio de entregas de la asignatura **Bases de Datos I** de la Universidad Industrial de Santander.
+Repositorio del proyecto **PetManager**, desarrollado para la asignatura **Bases de Datos I** de la Universidad Industrial de Santander.
 
-El proyecto del curso es **PetManager**, el diseño de una base de datos para un sistema de gestión de una clínica veterinaria enfocada en animales domésticos. El sistema integra propietarios, mascotas, citas, historia clínica, diagnósticos, tratamientos, vacunación, exámenes, inventario, facturación, pagos y seguimiento bajo un mismo modelo de datos.
+**PetManager** propone una base de datos para apoyar la gestión de una clínica veterinaria enfocada en animales domésticos. El sistema reúne información de propietarios, mascotas, citas, historia clínica, diagnósticos, tratamientos, vacunación, exámenes, inventario, facturación, pagos y seguimiento.
 
 ---
 
@@ -18,10 +18,10 @@ El proyecto del curso es **PetManager**, el diseño de una base de datos para un
 
 ---
 
-## Entregas
+## Organización del proyecto
 
-| Entrega | Contenido | Estado |
-|---------|-----------|--------|
-| [Entrega 1](Entrega_1/) | Contexto, tendencias, análisis de herramientas y **modelo E-R** | ✅ Completa |
-| [Entrega 2](Entrega_2/) | Próxima etapa del proyecto | 🔲 Pendiente |
-| [Entrega 3](Entrega_3/) | Próxima etapa del proyecto | 🔲 Pendiente |
+| Carpeta | Descripción |
+|---------|-------------|
+| [Entrega 1](Entrega_1/) | Contexto del problema, tendencias, herramientas de referencia y modelo E-R de PetManager. |
+| [Entrega 2](Entrega_2/) | Espacio destinado al desarrollo de la segunda etapa del proyecto. |
+| [Entrega 3](Entrega_3/) | Espacio destinado al desarrollo de la tercera etapa del proyecto. |
