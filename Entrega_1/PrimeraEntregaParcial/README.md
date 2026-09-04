@@ -11,11 +11,11 @@ Universidad Industrial de Santander · Escuela de Ingeniería de Sistemas e Info
 
 | # | Nombre completo | Código |
 |---|---|---|
-| 1 | Andrés Felipe Rivera Carreño | 2250193 |
-| 2 | Carlos Ivan Merlano Vergara | 2250188 |
-| 3 | Jannyer Stiven Caballero Domínguez | 2250191 |
-| 4 | Juan Sebastián Araujo Contreras | 2250142 |
-| 5 | Juan Pablo Vera Suáres | 2241807 |
+| 1 | **Jannyer Stiven Caballero Domnguez** | *2250191* |
+| 2 | [**Carlos Iván Merlano Vergara**] | *2250188* |
+| 3 | [**Andrés Felipe Rivera Carreño**] | *2250193* |
+| 4 | [**Juan Sebastián Araujo Contreras**] | *2250142* |
+| 5 | [**Juan Pablo Vera Suárez**] | *2241807* |
 
 ---
 
@@ -24,8 +24,8 @@ Universidad Industrial de Santander · Escuela de Ingeniería de Sistemas e Info
 1. [Contexto del problema trabajado en la actividad de exploración](#1-contexto-del-problema-trabajado-en-la-actividad-de-exploración)
 2. [Consulta de tendencias actuales en el área del proyecto](#2-consulta-de-tendencias-actuales-en-el-área-del-proyecto)
 3. [Consulta de herramientas o sistemas similares con su análisis de funcionalidades](#3-consulta-de-herramientas-o-sistemas-similares-con-su-análisis-de-funcionalidades)
-4. [Modelo de E-R dentro de PetManager](./DiagramaVetPrimeraEntrega.png)
-5. [Referencias](#referencias)
+4. [Referencias](#referencias)
+5. [Anexo, vinculación directa hacia el diagrama E-R de PetManager](./DiagramaVetPrimeraEntrega.png)
 
 ---
 
@@ -49,21 +49,37 @@ La operación de una clínica veterinaria presenta situaciones que requieren una
 - Una mascota puede requerir controles posteriores o nuevas aplicaciones de vacunas.
 - Los empleados de la clínica necesitan diferentes niveles de acceso al sistema.
 
-```mermaid
-flowchart LR
-    A[Propietario] --> B[Mascota]
-    B --> C[Cita]
-    C --> D[Consulta]
-    D --> E[Diagnóstico]
-    D --> F[Procedimiento]
-    D --> G[Prescripción]
-    D --> H[Examen]
-    D --> I[Facturación]
-    G --> J[Medicamento]
-    J --> K[Inventario]
-    H --> L[Resultado]
-    D --> M[Seguimiento]
+#### Flujo general de atención
+
+| Etapa | Información principal |
+|---|---|
+| **1. Registro** | Propietario, datos de contacto y mascota |
+| **2. Cita** | Fecha, hora, motivo y veterinario |
+| **3. Consulta** | Signos vitales, antecedentes y examen físico |
+| **4. Diagnóstico** | Diagnósticos y pruebas solicitadas |
+| **5. Tratamiento** | Procedimientos, medicamentos y recomendaciones |
+| **6. Facturación** | Servicios, productos, factura y pagos |
+| **7. Seguimiento** | Controles, vacunas, resultados y recordatorios |
+
+**Secuencia principal:**
+
+```text
+PROPIETARIO
+    ↓
+MASCOTA
+    ↓
+CITA
+    ↓
+CONSULTA
+    ├── DIAGNÓSTICO
+    ├── PROCEDIMIENTO
+    ├── PRESCRIPCIÓN ──→ MEDICAMENTO
+    ├── EXAMEN ──→ RESULTADO
+    ├── FACTURACIÓN
+    └── SEGUIMIENTO
 ```
+
+---
 
 ### 1.2 Problema de datos
 
@@ -72,6 +88,8 @@ flowchart LR
 El sistema debe relacionar correctamente la información clínica con la administrativa. Una cita no representa necesariamente una consulta realizada; un medicamento no es lo mismo que una prescripción; una factura puede existir antes de que se complete el pago; y una solicitud de examen puede permanecer pendiente hasta recibir un resultado.
 
 PetManager busca mantener cada uno de estos elementos como parte de una estructura relacionada que permita consultar la información de forma rápida y consistente.
+
+---
 
 ### 1.3 Alcance
 
@@ -117,6 +135,8 @@ PetManager busca mantener cada uno de estos elementos como parte de una estructu
 - Gestión de quirófanos.
 - Diseño final de interfaz de usuario.
 
+---
+
 ### 1.4 Conceptos clave del dominio
 
 | Concepto | Descripción |
@@ -144,6 +164,8 @@ PetManager busca mantener cada uno de estos elementos como parte de una estructu
 | **Usuario / Rol / Permiso** | Elementos utilizados para administrar el acceso a la plataforma. |
 | **Auditoría** | Registro de operaciones relevantes realizadas dentro del sistema. |
 
+---
+
 ### 1.5 Reglas de negocio identificadas
 
 1. Un propietario puede tener una o varias mascotas.
@@ -170,6 +192,8 @@ PetManager busca mantener cada uno de estos elementos como parte de una estructu
 22. Un usuario puede tener uno o varios roles.
 23. Los roles determinan los permisos disponibles.
 24. Los cambios importantes en datos clínicos, financieros o de inventario deben quedar registrados.
+
+---
 
 ### 1.6 Preguntas que la base de datos debe poder responder
 
@@ -210,6 +234,8 @@ PetManager busca mantener cada uno de estos elementos como parte de una estructu
 | **Control de inventario** | Seguimiento de medicamentos, vacunas e insumos por cantidad, lote y vencimiento. |
 | **Uso de indicadores** | Análisis de citas, pacientes, servicios, ingresos e inventario para apoyar decisiones administrativas. |
 
+---
+
 ### 2.2 Tendencias tecnológicas
 
 | Tendencia | En qué consiste |
@@ -223,6 +249,8 @@ PetManager busca mantener cada uno de estos elementos como parte de una estructu
 | **Recordatorios automáticos** | Notificaciones de citas, vacunas, controles, resultados o tratamientos. |
 | **Analítica operativa** | Generación de tableros e indicadores a partir de información histórica. |
 | **Seguridad y auditoría** | Gestión de usuarios, roles, permisos y registro de acciones realizadas. |
+
+---
 
 ### 2.3 Cómo estas tendencias impactan el diseño de la base de datos
 
@@ -263,6 +291,8 @@ Plataforma de gestión veterinaria basada en la nube orientada a clínicas y hos
 - Reportes.
 - Integraciones con servicios externos.
 
+---
+
 ### 3.2 IDEXX Neo
 
 Sistema veterinario en la nube orientado a la gestión clínica y administrativa.
@@ -278,6 +308,8 @@ Sistema veterinario en la nube orientado a la gestión clínica y administrativa
 - Comunicación con clientes.
 - Reportes.
 - Integración con herramientas diagnósticas.
+
+---
 
 ### 3.3 Covetrus Pulse
 
@@ -295,6 +327,8 @@ Plataforma de gestión veterinaria que integra funciones clínicas, administrati
 - Integraciones.
 - Herramientas asistidas por inteligencia artificial.
 
+---
+
 ### 3.4 Digitail
 
 Plataforma veterinaria enfocada en historia clínica electrónica, automatización y comunicación.
@@ -311,6 +345,8 @@ Plataforma veterinaria enfocada en historia clínica electrónica, automatizaci�
 - Reportes.
 - Automatización.
 - Funciones asistidas por inteligencia artificial.
+
+---
 
 ### 3.5 Cuadro comparativo de funcionalidades
 
@@ -336,7 +372,28 @@ Plataforma veterinaria enfocada en historia clínica electrónica, automatizaci�
 
 > *Parcial* o *Integrable* indica que la funcionalidad puede depender de módulos, configuración o integraciones adicionales.
 
-### 3.6 Conclusiones del análisis
+---
+
+### 3.6 Resumen de módulos de PetManager
+
+| Módulo | Información administrada |
+|---|---|
+| **Propietarios** | Datos personales, contacto y relación con mascotas |
+| **Pacientes** | Mascotas, especie, raza, sexo, nacimiento y datos generales |
+| **Agenda** | Citas, fechas, horarios, estados y veterinarios |
+| **Historia clínica** | Consultas, antecedentes, signos, diagnósticos y procedimientos |
+| **Tratamientos** | Prescripciones, medicamentos y recomendaciones |
+| **Vacunación** | Vacunas aplicadas, fechas, lotes y próximos controles |
+| **Diagnóstico** | Solicitudes de examen y resultados |
+| **Inventario** | Productos, lotes, proveedores y movimientos |
+| **Facturación** | Facturas, detalles, pagos y saldos |
+| **Seguimiento** | Controles posteriores y recordatorios |
+| **Seguridad** | Usuarios, roles, permisos y auditoría |
+| **Reportes** | Consultas administrativas y clínicas |
+
+---
+
+### 3.7 Conclusiones del análisis
 
 1. Las plataformas revisadas utilizan la **historia clínica** como elemento central para organizar la información del paciente.
 2. Todas incluyen mecanismos para gestionar **propietarios, mascotas y citas**.
@@ -363,6 +420,13 @@ Plataforma veterinaria enfocada en historia clínica electrónica, automatizaci�
 
 - Digitail. *Veterinary Practice Management Software.*  
   https://digitail.com/
+
+- American Veterinary Medical Association (AVMA). *Veterinary telehealth resources.*  
+  https://www.avma.org/
+
+- UC Davis School of Veterinary Medicine. *Telemedicine Appointments.*  
+  https://www.vetmed.ucdavis.edu/hospital/schedule-appointment/telemedicine
+
 
 - American Veterinary Medical Association (AVMA). *Veterinary telehealth resources.*  
   https://www.avma.org/
