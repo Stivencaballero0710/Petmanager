@@ -20,7 +20,7 @@ El repositorio se divide por etapas del proyecto. Cada entrega reúne únicament
 
 | Ruta | Propósito |
 |---|---|
-| [`Entrega_1/`](Entrega_1/) | Investigación inicial, construcción del modelo y documento consolidado de la primera entrega. |
+| [`Entrega_1/`](Modelo ER) | Investigación inicial, construcción del modelo y documento consolidado de la primera entrega. |
 | [`Entrega_2/`](Entrega_2/) | Material correspondiente a la segunda entrega. |
 | [`Entrega_3/`](Entrega_3/) | Material correspondiente a la tercera entrega. |
 
