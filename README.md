@@ -20,7 +20,7 @@ El repositorio se divide por etapas del proyecto. Cada entrega reúne únicament
 
 | Ruta | Propósito |
 |---|---|
-| [`Modelo E-R/`](Modelo E-R/) | Investigación inicial, construcción del modelo y documento consolidado de la primera entrega. |
+| [`Modelo E-R/`](https://github.com/Stivencaballero0710/Petmanager/tree/main/Modelo%20E-R) | Investigación inicial, construcción del modelo y documento consolidado de la primera entrega. |
 | [`Entrega_2/`](Entrega_2/) | Material correspondiente a la segunda entrega. |
 | [`Entrega_3/`](Entrega_3/) | Material correspondiente a la tercera entrega. |
 
