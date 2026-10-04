@@ -4,21 +4,14 @@ Esta carpeta contiene el modelo relacional normalizado correspondiente al proyec
 
 ## Descripción
 
-El modelo relacional representa la estructura de la base de datos del sistema PetManager, organizando la información en diferentes relaciones o tablas de acuerdo con las entidades y procesos identificados durante el desarrollo del proyecto.
+El modelo relacional representa la estructura de la base de datos de PetManager mediante diferentes tablas, atributos, claves primarias y claves foráneas.
 
-En este modelo se encuentran representadas las principales áreas del sistema, incluyendo la gestión de veterinarias, sucursales, inventario, elementos médicos, medicamentos, empleados, clientes, animales, facturación e información clínica.
+En este modelo se organizan las principales áreas del sistema, incluyendo la gestión de veterinarias, sucursales, inventario, elementos médicos, medicamentos, empleados, clientes, animales, facturación y registros clínicos.
 
-Cada tabla presenta sus respectivos atributos y permite identificar las **claves primarias (PK)** y **claves foráneas (FK)** utilizadas para establecer las relaciones entre las diferentes partes de la base de datos.
-
-La estructura presentada corresponde al modelo obtenido después del proceso de normalización, buscando mantener la información organizada, reducir la redundancia de datos y facilitar la integridad y consistencia de la información almacenada.
+La estructura presentada corresponde al modelo relacional obtenido a partir del proceso de normalización, buscando organizar adecuadamente la información, reducir la redundancia y mantener la consistencia de los datos.
 
 ## Modelo Relacional
 
-A continuación se presenta el diagrama completo del modelo relacional normalizado de PetManager.
+Para consultar el diagrama completo del modelo relacional normalizado:
 
-![Modelo Relacional Normalizado](./ModeloRelacionalNormalizado-PetManager.png)
-
-## Archivo
-
-**ModeloRelacionalNormalizado-PetManager.png**  
-Diagrama visual del modelo relacional normalizado utilizado para representar la estructura de la base de datos de PetManager.
+👉 [Ver Modelo Relacional Normalizado](./ModeloRelacionalNormalizado-PetManager.png)
