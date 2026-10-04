@@ -4,14 +4,12 @@ Esta carpeta contiene el informe correspondiente al proceso de normalización de
 
 ## Descripción
 
-El informe presenta el proceso realizado para analizar y verificar la estructura del modelo relacional de PetManager mediante la aplicación de las diferentes formas normales.
+En este informe se presenta el proceso de análisis y normalización aplicado al modelo relacional de PetManager. Se revisan las diferentes formas normales y las condiciones necesarias para determinar si la estructura requiere modificaciones o descomposiciones adicionales.
 
-En el documento se estudian las condiciones de **1FN, 2FN, 3FN, BCNF, 4FN, 5FN y 6FN**, revisando las dependencias, posibles redundancias y la necesidad de realizar descomposiciones adicionales en las relaciones.
+El documento analiza la **1FN, 2FN, 3FN, BCNF, 4FN, 5FN y 6FN**, considerando aspectos como dependencias, redundancia, claves primarias, claves foráneas y organización de la información.
 
-El objetivo del análisis es comprobar que la información se encuentre organizada adecuadamente y que el modelo mantenga un equilibrio entre la reducción de redundancia y la facilidad de manejo de la base de datos.
+El propósito del proceso es comprobar que el modelo se encuentre correctamente estructurado y que exista un equilibrio entre la reducción de redundancia y la facilidad de consulta y manejo de la base de datos.
 
 ## Documento
-
-Para consultar el informe completo:
 
 [Informe de Normalización](./Informe_Normalizacion_PetManager.pdf)
