@@ -15,16 +15,18 @@
 
 ## Contenido
 
-Esta carpeta contiene los archivos correspondientes a la segunda entrega del proyecto PetManager, incluyendo el modelo relacional normalizado y el informe del proceso de normalización.
+Esta carpeta corresponde a la segunda entrega del proyecto PetManager y contiene los elementos desarrollados para la construcción y normalización del modelo relacional de la base de datos.
+
+El modelo relacional permite representar la estructura de la información mediante tablas relacionadas entre sí, definiendo sus atributos, claves primarias y claves foráneas. A partir del modelo planteado se realizó el proceso de normalización, con el propósito de organizar adecuadamente los datos, reducir redundancias y mantener la integridad de la información.
 
 ### Modelo Relacional Normalizado
 
-Contiene el diagrama del modelo relacional con sus respectivas tablas, atributos, claves primarias y claves foráneas.
+En esta carpeta se encuentra el modelo relacional normalizado de PetManager, donde se presenta la estructura final de las tablas que conforman la base de datos y las relaciones establecidas entre ellas.
 
-[Consultar Modelo Relacional Normalizado](./Modelo%20Relacional%20Normalizado/ModeloRelacionalNormalizado-PetManager.png)
+[Carpeta Modelo Relacional Normalizado](./Modelo%20Relacional%20Normalizado/)
 
 ### Informe de Normalización
 
-Contiene el documento en el que se presenta el proceso de normalización aplicado al modelo relacional.
+En esta carpeta se encuentra el informe que documenta el proceso de normalización aplicado al modelo relacional. Se presenta el análisis de las diferentes formas normales y la revisión de las dependencias y posibles descomposiciones del modelo.
 
-[Consultar Informe de Normalización](./Informe%20de%20Normalización/)
+[Carpeta Informe de Normalización](./Informe%20de%20Normalización/)
