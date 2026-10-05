@@ -13,5 +13,5 @@ La estructura presentada corresponde al modelo relacional obtenido a partir del 
 ## Modelo Relacional
 
 Para consultar el diagrama completo del modelo relacional normalizado:
-
+Importante decir que está en un archivo excel así que para visualizarlo tiene que descargarlo.
 [Modelo Relacional Normalizado](./ModeloRelacionalNormalizadoPetManager.xlsx)
