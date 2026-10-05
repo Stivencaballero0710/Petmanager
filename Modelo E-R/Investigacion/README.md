@@ -1,11 +1,24 @@
 # Investigación inicial
 
-En esta carpeta se conserva la exploración realizada antes de consolidar la primera entrega.
+**Antecedentes de la primera entrega**
 
-## Contenido
+[Volver a Modelo E-R](../README.md) · [Ir al inicio](../../README.md)
 
-- [`Exploracion.md`](Exploracion.md): desarrollo inicial sobre conceptos relevantes, tendencias del sector y herramientas de referencia.
+Esta carpeta conserva la exploración realizada antes de consolidar la propuesta de PetManager. El documento reúne conceptos del dominio veterinario, tendencias del sector y herramientas que sirvieron de referencia.
 
-## Propósito
+## Archivo disponible
 
-Este material sirve como antecedente del documento final y permite revisar cómo se definió el problema antes de construir el modelo de datos.
+| Archivo | Contenido |
+| --- | --- |
+| [Exploracion.md](./Exploracion.md) | Conceptos fundamentales, tendencias tecnológicas, análisis de herramientas de gestión veterinaria y referencias de la exploración. |
+
+## Temas de consulta
+
+- Propietarios, mascotas, historia clínica, citas y servicios.
+- Inventario, farmacia, facturación y pagos.
+- Tendencias tecnológicas y organización de la información.
+- Herramientas de referencia: ezyVet, VETport, Provet Cloud y DVMAX Cloud.
+
+## Relación con la entrega
+
+La exploración corresponde al análisis inicial. El [documento consolidado](../Documento/README.md) presenta la primera entrega y el [modelo E-R](../Modelo/README.md) permite consultar el diagrama construido para esa etapa.

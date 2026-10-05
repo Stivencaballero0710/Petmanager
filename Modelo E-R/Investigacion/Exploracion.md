@@ -1,6 +1,10 @@
 # Proyecto de Clase: Sistema de Gestión de Veterinaria - Base de Datos
 
-![Sistema de Gestión Veterinaria](Files/vet1.png)
+[Volver a Investigación](./README.md) · [Consultar documento consolidado](../Documento/README.md) · [Ir al inicio](../../README.md)
+
+*Exploración inicial conservada como antecedente de la primera entrega.*
+
+![Sistema de Gestión Veterinaria](../Documento/imagenes/petmanager.png)
 
 ## Integrantes
 

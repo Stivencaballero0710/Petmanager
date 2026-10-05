@@ -1,5 +1,7 @@
 # PetManager — Sistema de Gestión para una Clínica Veterinaria
 
+[Volver a Modelo E-R](../README.md) · [Ir al inicio](../../README.md) · [Consultar la segunda entrega](../../Modelo%20Relacional/)
+
 **Entrega 1 — Bases de Datos I**  
 Universidad Industrial de Santander · Escuela de Ingeniería de Sistemas e Informática
 
@@ -416,4 +418,12 @@ Plataforma veterinaria enfocada en historia clínica electrónica, automatizaci�
 
 ## 5. Anexo — Diagrama E-R de PetManager
 
-[Ver diagrama E-R de PetManager](./DiagramaVetPrimeraEntrega.png)
+![Diagrama E-R de PetManager de la primera entrega](./DiagramaVetPrimeraEntrega.png)
+
+[Ver diagrama en tamaño completo](./DiagramaVetPrimeraEntrega.png) · [Consultar las versiones del modelo](../Modelo/README.md)
+
+## Continuación del trabajo
+
+La segunda entrega se encuentra en [Modelo Relacional](../../Modelo%20Relacional/). Allí se conservan el archivo de Excel con las etapas de normalización y el informe que explica la aplicación de cada forma normal.
+
+[Volver a Modelo E-R](../README.md) · [Ir al inicio del repositorio](../../README.md)
