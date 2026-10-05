@@ -4,7 +4,7 @@
 
 [Volver al inicio del repositorio](../README.md) · [Consultar la segunda entrega](../Modelo%20Relacional/)
 
-Esta carpeta reúne todos los archivos de la primera entrega. Aquí se presenta el problema de información de una clínica veterinaria, la investigación que apoyó la propuesta y el modelo entidad-relación construido a partir de ese análisis
+Esta carpeta reúne todos los archivos de la primera entrega. Aquí se presenta el problema de información de una clínica veterinaria, la investigación que apoyó la propuesta y el modelo entidad-relación construido a partir de ese análisis.
 
 ## Organización de la entrega
 
