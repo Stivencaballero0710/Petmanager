@@ -1,6 +1,6 @@
 # PetManager — Bases de Datos I
 
-Proyecto académico desarrollado para la asignatura **Bases de Datos I** de la Universidad Industrial de Santander.
+Proyecto desarrollado para la asignatura **Bases de Datos I** de la Universidad Industrial de Santander.
 
 **PetManager** plantea una base de datos para apoyar la gestión de una clínica veterinaria enfocada en animales domésticos. El proyecto organiza información de propietarios, mascotas, citas, consultas, diagnósticos, tratamientos, vacunación, exámenes, inventario, facturación, pagos y seguimiento.
 
