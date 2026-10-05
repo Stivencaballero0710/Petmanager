@@ -42,7 +42,7 @@ Como propuesta de implementación, el informe recomienda conservar las **18 tabl
 
 Una columna puede combinar varias marcas. Por ejemplo, en los subtipos se utiliza **PK, FK** para compartir el identificador con su tabla principal. Las relaciones 1:1 declaradas usan restricciones de unicidad en las FK correspondientes.
 
-## Cómo revisar la segunda entrega.
+## Cómo revisar la segunda entrega
 
 1. Descarga el [Excel](./Modelo%20Relacional%20Normalizado/ModeloRelacionalNormalizadoPetManager.xlsx) desde el botón de descarga de GitHub y ábrelo en Excel o LibreOffice Calc.
 2. Comienza por la hoja `modelo` para consultar el punto de partida.
