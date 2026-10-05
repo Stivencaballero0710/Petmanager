@@ -12,4 +12,4 @@ El propósito del proceso es comprobar que el modelo se encuentre correctamente 
 
 ## Documento
 
-[Informe de Normalización](./Informe_normalizacion_petmanager.pdf)
+[Informe de Normalización](./Informe_Normalizacion_PetManager.pdf)
