@@ -22,6 +22,8 @@ El repositorio se divide por etapas del proyecto. Cada entrega reúne únicament
 |---|---|
 | [Modelo E-R](./Modelo%20E-R/) | Todos los archivos de la primera entrega: investigación inicial, diagramas y documento consolidado. |
 | [Modelo Relacional](./Modelo%20Relacional/) | Modelo relacional normalizado e informe de aplicación de los pasos de normalización de la segunda entrega. |
+| [SQL](./SQL/) | Pendiente de modificación. |
+| [Sustentación](./Sustentaci%C3%B3n/) | Pendiente de modificación. |
 
 ## Segunda entrega: modelo relacional y normalización
 
@@ -33,6 +35,14 @@ Esta entrega contiene:
 - [**Informe de aplicación de la normalización en PDF**](./Modelo%20Relacional/Informe%20de%20Normalizaci%C3%B3n/Informe_Normalizacion_PetManager.pdf): explica la revisión de **1FN, 2FN, 3FN, BCNF, 4FN, 5FN y 6FN**, con ejemplos del proyecto y los resultados de cada etapa.
 
 El análisis conserva las 18 tablas de partida hasta 5FN, incluida BCNF, bajo las dependencias documentadas. En 6FN se presentan 54 tablas como resultado de la descomposición. Para consultar el Excel, descarga el archivo desde GitHub y ábrelo en Excel o LibreOffice Calc.
+
+## SQL
+
+Pendiente de modificación.
+
+## Sustentación
+
+Pendiente de modificación.
 
 ## Alcance general de PetManager
 
