@@ -12,7 +12,7 @@ Primero se transformó el diseño entidad-relación en tablas. A cada entidad se
 | Relación 1:1 | Se utiliza una FK con restricción de unicidad. | `historial_clinico.id_animal`. |
 | Especialización | El subtipo comparte la PK de la tabla principal y la usa como FK. | `veterinario`, `secretario` y `auxiliar` respecto a `empleado`. |
 
-**Idea para explicar:** el modelo E-R indica cómo se relacionan los datos; el modelo relacional organiza esas relaciones en tablas que luego pueden implementarse en SQL.
+El modelo E-R representa las entidades y sus relaciones; el modelo relacional organiza esa información en tablas que pueden implementarse en SQL.
 
 ## Modelo relacional de 5FN
 
@@ -43,13 +43,13 @@ erDiagram
 
 **[Ver el modelo completo con todos los atributos y sus claves](./Modelo_Relacional_5FN.md)**
 
-**Ejemplo para explicar:** `ANIMAL` tiene como clave primaria `id_animal` y se relaciona con `CLIENTE` mediante `id_cliente`. Así se representan las relaciones sin repetir los datos del propietario.
+Por ejemplo, `ANIMAL` tiene como clave primaria `id_animal` y se relaciona con `CLIENTE` mediante `id_cliente`, evitando repetir los datos del propietario.
 
 ## Proceso de normalización
 
 Se partió de **18 tablas**. La finalidad de la normalización fue revisar las dependencias, evitar redundancias innecesarias y mantener la consistencia de la información. **No fue necesario crear tablas nuevas en cada forma normal.**
 
-| Forma normal | Qué se revisó y cómo explicarlo | Resultado |
+| Forma normal | Criterio revisado | Resultado |
 | --- | --- | --- |
 | **1FN** | Los atributos almacenan valores atómicos, sin listas ni grupos repetidos en una misma celda. | 18 tablas |
 | **2FN** | Los atributos no clave dependen de la clave completa; en el modelo documentado las claves candidatas consideradas son simples. | 18 tablas |
@@ -70,9 +70,7 @@ Se partió de **18 tablas**. La finalidad de la normalización fue revisar las d
 
 Se decidió implementar las **18 tablas de 5FN** porque conservan las relaciones previstas y evitan las uniones adicionales que exigiría la versión descompuesta de 6FN. La revisión de las formas normales se basa en las dependencias y reglas de negocio documentadas.
 
-**Frase para cerrar y pasar al siguiente punto:** «Con esta revisión se mantuvieron las 18 tablas como estructura final. A continuación se muestra cómo quedaron construidas en SQL».
-
-## Material de apoyo
+## Documentos relacionados
 
 [Excel del modelo relacional normalizado](../../Modelo%20Relacional/Modelo%20Relacional%20Normalizado/ModeloRelacionalNormalizadoPetManager.xlsx) · [Informe de normalización](../../Modelo%20Relacional/Informe%20de%20Normalizaci%C3%B3n/Informe_Normalizacion_PetManager.pdf)
 

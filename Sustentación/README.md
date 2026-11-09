@@ -4,18 +4,11 @@
 
 **[Comenzar: 1. Análisis de la situación](./01_Analisis_de_la_situacion/)**
 
-La exposición se realiza directamente desde este repositorio de GitHub, siguiendo los seis puntos solicitados y con un máximo de **15 minutos**. Todos los integrantes participan. Los diagramas, el Excel, el informe y los scripts se conservan en sus carpetas originales.
-
-## Cómo presentar desde GitHub
-
-1. Comienza por [Análisis de la situación](./01_Analisis_de_la_situacion/).
-2. Avanza en orden con los enlaces **Siguiente** de cada apartado.
-3. Abre los modelos, el informe y los scripts desde los enlaces de cada sección.
-4. Para ejecutar el proyecto en MySQL Workbench, sigue la [guía SQL](../SQL/README.md).
+La presentación se organiza en seis apartados y tiene una duración máxima de **15 minutos**. Participan los cinco integrantes del grupo. Los diagramas, el Excel, el informe y los scripts se encuentran en sus carpetas correspondientes.
 
 ## Recorrido de los seis puntos
 
-| Punto | Material de apoyo | Tiempo |
+| Punto | Apartado | Tiempo |
 | --- | --- | --- |
 | 1. Análisis de la situación | [Problema, objetivo y alcance](./01_Analisis_de_la_situacion/) | 1 min 30 s |
 | 2. Modelo entidad-relación | [Entidades y relaciones](./02_Modelo_Entidad_Relacion/) | 2 min 30 s |
@@ -37,4 +30,3 @@ La exposición se realiza directamente desde este repositorio de GitHub, siguien
 | Carlos Iván Merlano Vergara | Carga de datos (1 min) y diez consultas (4 min). | 5 min |
 | **Transiciones y cierre** | **Tiempo compartido por el equipo.** | **30 s** |
 
-Las intervenciones se presentan en el orden de los seis puntos. Para ajustarse al tiempo, en las consultas basta con explicar la pregunta y mostrar el resultado; conviene destacar las relaciones recorridas en las consultas 7 y 10.

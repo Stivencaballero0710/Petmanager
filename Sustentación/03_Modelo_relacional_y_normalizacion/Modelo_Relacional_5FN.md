@@ -189,6 +189,5 @@ Las siguientes referencias corresponden a las **17 claves foráneas del SQL** y 
 - **Atributo derivado:** `cantidad_total` no es una columna física. Se calcula a partir de las cantidades de medicamentos y elementos médicos.
 - **Normalización:** bajo las dependencias documentadas, el modelo se conserva en **18 relaciones desde 1FN hasta 5FN**, incluida BCNF. La descomposición de **54 relaciones en 6FN** se documentó como un ejercicio, pero no se implementó.
 
-> **Para exponer:** «El Excel muestra las mismas 18 relaciones que implementamos en SQL. Se revisaron las dependencias hasta quinta forma normal y, bajo las reglas del modelo, no fue necesaria una nueva descomposición. Las claves subrayadas identifican cada relación y las claves foráneas muestran cómo se enlazan».
 
 [Informe de normalización](../../Modelo%20Relacional/Informe%20de%20Normalizaci%C3%B3n/Informe_Normalizacion_PetManager.pdf) · [Siguiente: esquema SQL](../04_Base_de_datos_en_SQL/)

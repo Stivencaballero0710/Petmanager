@@ -2,7 +2,7 @@
 
 [Consultas SQL](./consultas.sql) · [Volver a la guía](./README.md)
 
-Resultados obtenidos con los datos de `registros.sql` en SQLite. Las sentencias de consulta se ejecutan sin cambios; la adaptación se aplica al esquema y a la selección de base.
+Resultados obtenidos al ejecutar las consultas en MySQL Workbench sobre los datos de la carga inicial de `registros.sql`.
 
 ## 1. Clientes con mascotas de determinadas razas
 
