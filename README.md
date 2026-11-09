@@ -7,18 +7,18 @@ PetManager organiza la información de una veterinaria: sucursales, personal, cl
 
 ## Presentación del proyecto
 
-**[Abrir el notebook de la entrega final](./Sustentaci%C3%B3n/PetManager_Proyecto_Final.ipynb)**
+**[Abrir la sustentación desde GitHub](./Sustentaci%C3%B3n/)**
 
-El notebook sigue los seis puntos de la presentación: análisis de la situación, modelo E-R, modelo relacional y normalización, esquema SQL, carga de datos y consultas. Incluye resultados guardados para leerlos desde GitHub y una demostración reproducible en Python.
+La presentación se realiza desde este repositorio de GitHub siguiendo los seis puntos en el orden solicitado. Cada apartado enlaza el material correspondiente.
 
 | Requisito | Material |
 | --- | --- |
 | 1. Análisis de la situación | [Problema, objetivo y alcance](./Sustentaci%C3%B3n/01_Analisis_de_la_situacion/) |
 | 2. Modelo entidad-relación | [Diagrama y relaciones](./Sustentaci%C3%B3n/02_Modelo_Entidad_Relacion/) |
 | 3. Modelo relacional y normalización | [Claves, dependencias y formas normales](./Sustentaci%C3%B3n/03_Modelo_relacional_y_normalizacion/) |
-| 4. Base de datos en SQL | [Esquema de 18 tablas](./SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql) |
-| 5. Carga de datos | [Registros del proyecto](./SQL/04_Insercion_de_datos/) |
-| 6. Consultas SQL | [Consultas y resultados](./SQL/05_Consultas/) |
+| 4. Base de datos construida en SQL (esquema) | [Esquema de 18 tablas](./SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql) |
+| 5. Carga de datos (mínimo 5 registros por tabla) | [Registros del proyecto](./SQL/04_Insercion_de_datos/) |
+| 6. Diez consultas pertinentes al proyecto | [Consultas y resultados](./SQL/05_Consultas/) |
 
 ## Estructura del repositorio
 
@@ -27,13 +27,13 @@ El notebook sigue los seis puntos de la presentación: análisis de la situació
 | [Modelo E-R](./Modelo%20E-R/) | Investigación, documento y diagramas de la primera entrega. |
 | [Modelo Relacional](./Modelo%20Relacional/) | Excel del modelo e informe de normalización de la segunda entrega. |
 | [SQL](./SQL/) | Creación de la base, tablas, carga de datos y consultas. |
-| [Sustentación](./Sustentaci%C3%B3n/) | Notebook, recorrido de los seis puntos y distribución sugerida de los 15 minutos. |
+| [Sustentación](./Sustentaci%C3%B3n/) | Recorrido de los seis puntos y distribución sugerida de los 15 minutos. |
 
 ## Ejecutar el proyecto
 
-En MySQL Workbench, sigue el [orden de los scripts](./SQL/README.md). Para ejecutar la demostración del notebook, descarga el repositorio completo, abre `Sustentación/PetManager_Proyecto_Final.ipynb` en Jupyter o VS Code con un kernel de Python 3 y ejecuta las celdas en orden.
+En MySQL Workbench, sigue el [orden de los scripts](./SQL/README.md) para crear el esquema, cargar los registros y ejecutar las consultas.
 
-La demostración del notebook utiliza SQLite en memoria, sin servidor ni paquetes adicionales de base de datos. Los scripts de entrega son de MySQL 8.0. El notebook presenta los resultados de las consultas y enlaza los archivos SQL.
+Para la exposición, abre el [recorrido de la sustentación](./Sustentaci%C3%B3n/) y avanza por los seis apartados directamente desde GitHub.
 
 ## Alcance de la entrega
 
