@@ -17,22 +17,24 @@ La exposición se realiza directamente desde este repositorio de GitHub, siguien
 
 | Punto | Material de apoyo | Tiempo |
 | --- | --- | --- |
-| 1. Análisis de la situación | [Problema, objetivo y alcance](./01_Analisis_de_la_situacion/) | 2 min |
-| 2. Modelo entidad-relación | [Entidades y relaciones](./02_Modelo_Entidad_Relacion/) | 2 min |
+| 1. Análisis de la situación | [Problema, objetivo y alcance](./01_Analisis_de_la_situacion/) | 1 min 30 s |
+| 2. Modelo entidad-relación | [Entidades y relaciones](./02_Modelo_Entidad_Relacion/) | 2 min 30 s |
 | 3. Modelo relacional y normalización | [Claves y formas normales](./03_Modelo_relacional_y_normalizacion/) | 3 min |
-| 4. Base de datos construida en SQL (esquema) | [Tablas y restricciones](./04_Base_de_datos_en_SQL/) | 2 min |
+| 4. Base de datos construida en SQL (esquema) | [Tablas y restricciones](./04_Base_de_datos_en_SQL/) | 2 min 30 s |
 | 5. Carga de datos (mínimo 5 registros por tabla) | [Registros por tabla](./05_Carga_de_datos/) | 1 min |
 | 6. Diez consultas sobre la base de datos | [Preguntas y resultados](./06_Consultas_SQL/) | 4 min |
-| Cierre | Resultado del proyecto | 1 min |
+| Transiciones y cierre | Resumen del resultado | 30 s |
+| **Total** | | **15 min** |
 
-## Distribución sugerida entre los integrantes
+## Distribución entre los integrantes
 
 | Integrante | Intervención | Tiempo |
 | --- | --- | --- |
-| Jannyer Stiven Caballero Domínguez | Análisis de la situación y cierre. | 3 min |
-| Carlos Iván Merlano Vergara | Modelo E-R e introducción al paso a tablas. | 3 min |
-| Andrés Felipe Rivera Carreño | Normalización y primeras decisiones del esquema SQL. | 3 min |
-| Juan Sebastián Araujo Contreras | Restricciones SQL, carga de datos y consulta 1. | 3 min |
-| Juan Pablo Vera Suárez | Consultas 2 a 10 y lectura de los resultados principales. | 3 min |
+| Juan Sebastián Araujo Contreras | Análisis de la situación. | 1 min 30 s |
+| Juan Pablo Vera Suárez | Modelo entidad-relación. | 2 min 30 s |
+| Jannyer Stiven Caballero Domínguez | Modelo relacional y normalización. | 3 min |
+| Andrés Felipe Rivera Carreño | Base de datos construida en SQL (esquema). | 2 min 30 s |
+| Carlos Iván Merlano Vergara | Carga de datos (1 min) y diez consultas (4 min). | 5 min |
+| **Transiciones y cierre** | **Tiempo compartido por el equipo.** | **30 s** |
 
-Es una propuesta de reparto que el equipo puede ajustar. Para respetar el tiempo, basta con explicar la pregunta y el resultado de cada consulta, y detenerse en el recorrido de relaciones de las consultas 7 y 10.
+Las intervenciones se presentan en el orden de los seis puntos. Para ajustarse al tiempo, en las consultas basta con explicar la pregunta y mostrar el resultado; conviene destacar las relaciones recorridas en las consultas 7 y 10.
