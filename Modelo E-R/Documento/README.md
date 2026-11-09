@@ -1,5 +1,7 @@
 # PetManager — Sistema de Gestión para una Clínica Veterinaria
 
+> **Alcance de esta etapa:** este documento conserva la exploración de la primera entrega. Las funciones finalmente implementadas se describen en la [entrega final](../../Sustentaci%C3%B3n/01_Analisis_de_la_situacion/).
+
 [Volver a Modelo E-R](../README.md) · [Ir al inicio](../../README.md) · [Consultar la segunda entrega](../../Modelo%20Relacional/)
 
 **Entrega 1 — Bases de Datos I**  

@@ -1,5 +1,7 @@
 # Modelo Relacional
 
+> **Implementación final:** el [esquema SQL](../SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql) conserva las 18 tablas de la propuesta. Las decisiones de tipos y restricciones se explican en [ajustes del esquema](../SQL/03_Modificaciones/).
+
 **Segunda entrega · PetManager · Bases de Datos I · Grupo G1 · 2026-2**
 
 [Volver al inicio](../README.md) · [Consultar Modelo E-R](../Modelo%20E-R/)
