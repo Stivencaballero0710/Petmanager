@@ -1,4 +1,4 @@
--- Diez consultas de la entrega final.
+-- Consultas de información clínica y administrativa.
 USE petmanager;
 
 -- 1. CLIENTES CON MASCOTAS DE DETERMINADAS RAZAS

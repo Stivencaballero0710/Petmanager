@@ -1,8 +1,8 @@
-# Resultados de las diez consultas
+# Resultados de las consultas
 
 [Consultas SQL](./consultas.sql) · [Volver a la guía](./README.md)
 
-Resultados obtenidos con los datos de `registros.sql` en SQLite. Las diez sentencias de consulta se ejecutan sin cambios; la adaptación se aplica al esquema y a la selección de base.
+Resultados obtenidos con los datos de `registros.sql` en SQLite. Las sentencias de consulta se ejecutan sin cambios; la adaptación se aplica al esquema y a la selección de base.
 
 ## 1. Clientes con mascotas de determinadas razas
 
@@ -42,7 +42,7 @@ Consultar auxiliares de áreas distintas de Laboratorio y Farmacia.
 
 ## 7. Mascotas con vacunación registrada
 
-Recorrer mascota, historial y registro clínico para comprobar la existencia de una vacunación.
+Recorrer mascota, historial y registro clínico para identificar las mascotas con vacunación registrada.
 
 **Resultado (10 filas):** Las diez mascotas tienen una vacunación registrada.
 

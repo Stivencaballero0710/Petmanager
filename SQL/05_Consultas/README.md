@@ -1,8 +1,8 @@
-# Consultas de la entrega final
+# Consultas SQL
 
-[Volver a SQL](../README.md) · [Ver resultados](./resultados_esperados.md)
+[Volver a SQL](../README.md) · [Ver resultados](./resultados_consultas.md)
 
-[consultas.sql](./consultas.sql) reúne las diez consultas del proyecto. Usan filtros, rangos, ordenamiento y subconsultas con `IN` y `EXISTS` para responder preguntas de la veterinaria.
+[consultas.sql](./consultas.sql) reúne las consultas del proyecto. Usan filtros, rangos, ordenamiento y subconsultas con `IN` y `EXISTS` para responder preguntas de la veterinaria.
 
 | N.º | Consulta | Filas |
 | --- | --- | --- |

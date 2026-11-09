@@ -1,6 +1,6 @@
 # 6. Consultas sobre la base de datos
 
-Las diez consultas responden preguntas sobre clientes, salarios, medicamentos, inventarios y atención clínica. Se utilizan `WHERE`, `BETWEEN`, `IN`, `NOT IN`, `LIKE`, `ORDER BY` y subconsultas con `EXISTS`.
+Las consultas responden preguntas sobre clientes, salarios, medicamentos, inventarios y atención clínica. Se utilizan `WHERE`, `BETWEEN`, `IN`, `NOT IN`, `LIKE`, `ORDER BY` y subconsultas con `EXISTS`.
 
 `EXISTS` permite saber si hay al menos una fila relacionada sin duplicar al cliente o a la mascota cuando tiene varios registros que cumplen la condición. En las consultas 7 y 10 se recorre la relación animal, historial, registro clínico y tipo de atención.
 
@@ -18,6 +18,6 @@ Las diez consultas responden preguntas sobre clientes, salarios, medicamentos, i
 | 9 | Inventarios que requieren revisión | 3 |
 | 10 | Mascotas con hospitalizaciones prolongadas | 3 |
 
-[Diez consultas](../../SQL/05_Consultas/consultas.sql) · [Interpretación de resultados](../../SQL/05_Consultas/resultados_esperados.md)
+[Consultas SQL](../../SQL/05_Consultas/consultas.sql) · [Interpretación de resultados](../../SQL/05_Consultas/resultados_consultas.md)
 
 [Volver a la sustentación](../README.md) · [Abrir notebook](../PetManager_Proyecto_Final.ipynb)

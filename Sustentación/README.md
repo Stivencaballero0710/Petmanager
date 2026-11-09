@@ -23,7 +23,7 @@ La exposición se realiza sobre el notebook, sigue los seis puntos solicitados y
 | 3. Modelo relacional y normalización | [Claves y formas normales](./03_Modelo_relacional_y_normalizacion/) | 3 min |
 | 4. Base de datos en SQL | [Tablas y restricciones](./04_Base_de_datos_en_SQL/) | 2 min |
 | 5. Carga de datos | [Registros por tabla](./05_Carga_de_datos/) | 1 min |
-| 6. Diez consultas | [Preguntas y resultados](./06_Consultas_SQL/) | 4 min |
+| 6. Consultas SQL | [Preguntas y resultados](./06_Consultas_SQL/) | 4 min |
 | Cierre | Resultado del proyecto | 1 min |
 
 ## Distribución sugerida entre los integrantes

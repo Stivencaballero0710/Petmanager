@@ -28,6 +28,6 @@ Hay 30 empleados, 40 registros clínicos y 10 registros en cada una de las otras
 
 **Total: 230 registros.** Todas las tablas tienen al menos diez filas.
 
-[Carga de datos](../../SQL/04_Insercion_de_datos/registros.sql) · [Consulta de conteos](../../SQL/04_Insercion_de_datos/verificar_carga.sql)
+[Carga de datos](../../SQL/04_Insercion_de_datos/registros.sql)
 
 [Volver a la sustentación](../README.md) · [Abrir notebook](../PetManager_Proyecto_Final.ipynb)

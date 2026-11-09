@@ -4,7 +4,7 @@
 
 [registros.sql](./registros.sql) contiene los datos entregados para el proyecto. Cada `INSERT` indica sus columnas y se cargan primero las filas referenciadas por las FK. La carga se ejecuta una sola vez sobre las tablas vacías.
 
-Ejecuta [verificar_carga.sql](./verificar_carga.sql) para obtener los conteos siguientes:
+Los registros se distribuyen de la siguiente manera:
 
 | Tabla | Registros |
 | --- | --- |
