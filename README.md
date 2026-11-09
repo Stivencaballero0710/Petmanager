@@ -16,9 +16,9 @@ La presentación se realiza desde este repositorio de GitHub siguiendo los seis 
 | 1. Análisis de la situación | [Problema, objetivo y alcance](./Sustentaci%C3%B3n/01_Analisis_de_la_situacion/) |
 | 2. Modelo entidad-relación | [Diagrama y relaciones](./Sustentaci%C3%B3n/02_Modelo_Entidad_Relacion/) |
 | 3. Modelo relacional y normalización | [Claves, dependencias y formas normales](./Sustentaci%C3%B3n/03_Modelo_relacional_y_normalizacion/) |
-| 4. Base de datos construida en SQL (esquema) | [Esquema de 18 tablas](./SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql) |
-| 5. Carga de datos (mínimo 5 registros por tabla) | [Registros del proyecto](./SQL/04_Insercion_de_datos/) |
-| 6. Diez consultas pertinentes al proyecto | [Consultas y resultados](./SQL/05_Consultas/) |
+| 4. Base de datos construida en SQL (esquema) | [Tablas y restricciones](./Sustentaci%C3%B3n/04_Base_de_datos_en_SQL/) |
+| 5. Carga de datos (mínimo 5 registros por tabla) | [Registros por tabla](./Sustentaci%C3%B3n/05_Carga_de_datos/) |
+| 6. Diez consultas pertinentes al proyecto | [Consultas y resultados](./Sustentaci%C3%B3n/06_Consultas_SQL/) |
 
 ## Estructura del repositorio
 
