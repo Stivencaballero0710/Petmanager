@@ -1,6 +1,5 @@
 # 3. Modelo relacional y normalización
 
-**Tiempo para exponer: 3 minutos** · Paso del modelo E-R al relacional: **35 segundos** · Normalización y decisión final: **2 minutos y 25 segundos**.
 
 ## Del modelo E-R al modelo relacional
 
