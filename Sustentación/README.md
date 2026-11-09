@@ -2,17 +2,16 @@
 
 [Volver al inicio](../README.md)
 
-**[Abrir PetManager_Proyecto_Final.ipynb](./PetManager_Proyecto_Final.ipynb)**
+**[Comenzar: 1. Análisis de la situación](./01_Analisis_de_la_situacion/)**
 
-La exposición se realiza sobre el notebook, sigue los seis puntos solicitados y tiene un máximo de **15 minutos**. Todos los integrantes participan. Los diagramas, el Excel, el informe y los scripts se conservan en sus carpetas originales.
+La exposición se realiza directamente desde este repositorio de GitHub, siguiendo los seis puntos solicitados y con un máximo de **15 minutos**. Todos los integrantes participan. Los diagramas, el Excel, el informe y los scripts se conservan en sus carpetas originales.
 
-## Preparar la presentación
+## Cómo presentar desde GitHub
 
-1. Descarga el repositorio completo desde **Code → Download ZIP** y descomprímelo, o clónalo con Git.
-2. Abre `PetManager_Proyecto_Final.ipynb` en Jupyter o VS Code con un kernel de Python 3.
-3. Ejecuta todas las celdas en orden. La demostración usa SQLite en memoria y carga los archivos de la carpeta `SQL`. No necesita credenciales ni modifica una base existente.
-4. Para la ejecución nativa en MySQL, sigue la [guía SQL](../SQL/README.md).
-5. Revisa el diagrama en tamaño completo y los resultados antes de exponer. GitHub permite leer el notebook y sus salidas guardadas, pero no ejecutar sus celdas.
+1. Comienza por [Análisis de la situación](./01_Analisis_de_la_situacion/).
+2. Avanza en orden con los enlaces **Siguiente** de cada apartado.
+3. Abre los modelos, el informe y los scripts desde los enlaces de cada sección.
+4. Para ejecutar el proyecto en MySQL Workbench, sigue la [guía SQL](../SQL/README.md).
 
 ## Recorrido de los seis puntos
 
@@ -21,9 +20,9 @@ La exposición se realiza sobre el notebook, sigue los seis puntos solicitados y
 | 1. Análisis de la situación | [Problema, objetivo y alcance](./01_Analisis_de_la_situacion/) | 2 min |
 | 2. Modelo entidad-relación | [Entidades y relaciones](./02_Modelo_Entidad_Relacion/) | 2 min |
 | 3. Modelo relacional y normalización | [Claves y formas normales](./03_Modelo_relacional_y_normalizacion/) | 3 min |
-| 4. Base de datos en SQL | [Tablas y restricciones](./04_Base_de_datos_en_SQL/) | 2 min |
-| 5. Carga de datos | [Registros por tabla](./05_Carga_de_datos/) | 1 min |
-| 6. Consultas SQL | [Preguntas y resultados](./06_Consultas_SQL/) | 4 min |
+| 4. Base de datos construida en SQL (esquema) | [Tablas y restricciones](./04_Base_de_datos_en_SQL/) | 2 min |
+| 5. Carga de datos (mínimo 5 registros por tabla) | [Registros por tabla](./05_Carga_de_datos/) | 1 min |
+| 6. Diez consultas sobre la base de datos | [Preguntas y resultados](./06_Consultas_SQL/) | 4 min |
 | Cierre | Resultado del proyecto | 1 min |
 
 ## Distribución sugerida entre los integrantes
