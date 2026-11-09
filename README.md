@@ -29,17 +29,17 @@ La presentación se realiza desde este repositorio de GitHub siguiendo los seis 
 | [SQL](./SQL/) | Creación de la base, tablas, carga de datos y consultas. |
 | [Sustentación](./Sustentaci%C3%B3n/) | Recorrido de los seis puntos y distribución sugerida de los 15 minutos. |
 
-## Ejecutar el proyecto
-
-En MySQL Workbench, sigue el [orden de los scripts](./SQL/README.md) para crear el esquema, cargar los registros y ejecutar las consultas.
-
-Para la exposición, abre el [recorrido de la sustentación](./Sustentaci%C3%B3n/) y avanza por los seis apartados directamente desde GitHub.
-
 ## Alcance de la entrega
 
 Se implementan **18 tablas con 17 claves foráneas**. Hay 30 empleados, 40 registros clínicos y 10 filas en cada una de las otras 16 tablas. Se mantienen las 18 tablas analizadas hasta 5FN bajo los supuestos del informe; la descomposición en 54 tablas de 6FN se conserva como ejercicio de normalización.
 
 La exploración inicial consideró más funcionalidades que las implementadas. El alcance final está descrito en la [sustentación](./Sustentaci%C3%B3n/01_Analisis_de_la_situacion/) y en las [decisiones del esquema](./SQL/03_Modificaciones/).
+
+## Ejecutar el proyecto
+
+En MySQL Workbench, sigue el [orden de los scripts](./SQL/README.md) para crear el esquema, cargar los registros y ejecutar las consultas.
+
+Para la exposición, abre el [recorrido de la sustentación](./Sustentaci%C3%B3n/) y avanza por los seis apartados directamente desde GitHub.
 
 ## Integrantes
 
