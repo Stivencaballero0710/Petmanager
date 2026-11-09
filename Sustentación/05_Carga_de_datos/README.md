@@ -30,4 +30,4 @@ Hay 30 empleados, 40 registros clínicos y 10 registros en cada una de las otras
 
 [Carga de datos](../../SQL/04_Insercion_de_datos/registros.sql)
 
-[Volver a la sustentación](../README.md) · [Abrir notebook](../PetManager_Proyecto_Final.ipynb)
+[Volver al índice de la sustentación](../README.md) · [Siguiente: Diez consultas SQL](../06_Consultas_SQL/)
