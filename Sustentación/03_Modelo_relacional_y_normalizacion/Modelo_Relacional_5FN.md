@@ -2,11 +2,143 @@
 
 [Volver a normalización](./README.md) · [Excel original](../../Modelo%20Relacional/Modelo%20Relacional%20Normalizado/ModeloRelacionalNormalizadoPetManager.xlsx) · [SQL de las 18 tablas](../../SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql)
 
-Este modelo reproduce las **18 relaciones, los nombres y el orden de los atributos de la hoja `5FN` del Excel**. Utiliza la convención de la notación relacional de **ERDPlus**: el nombre de la relación seguido de sus atributos y la clave primaria subrayada. El SQL implementa estas 18 tablas.
+Este modelo presenta las **18 relaciones de la hoja `5FN` del Excel**, con los mismos nombres y atributos. Es la estructura implementada en SQL.
 
-## Modelo relacional en notación de ERDPlus
+## Diagrama del modelo relacional
 
-**Convenciones:** atributo <u>subrayado</u> = **PK**; **(FK)** = clave foránea; **(UK)** = unicidad adicional. Una PK también puede funcionar como FK en las especializaciones.
+```mermaid
+erDiagram
+    VETERINARIA {
+        int id_veterinaria PK
+        string nombre_vet
+        string direccion_vet
+    }
+    SUCURSAL {
+        int id_sucursal PK
+        int id_veterinaria FK
+        string direccion_suc
+        string telefono_suc
+    }
+    INVENTARIO {
+        int id_inventario PK
+        int id_sucursal FK,UK
+        int numero_stock
+    }
+    ELEMENTO_MEDICO {
+        int id_elemento PK
+        int id_inventario FK
+        string funcion
+        string marca
+        string tipo_elemento
+        int cantidad
+    }
+    MEDICAMENTO {
+        int id_medicamento PK
+        int id_inventario FK
+        string tipo_medicamento
+        string presentacion
+        string dosis
+        int cantidad
+    }
+    TRATAMIENTO {
+        int id_registro PK,FK
+        string receta_medica
+        string indicaciones
+    }
+    EMPLEADO {
+        int id_empleado PK
+        int id_veterinaria FK
+        string nombre_emp
+        string apellido_emp
+        string telefono_emp
+        string direccion_emp
+        float salario
+    }
+    VETERINARIO {
+        int id_empleado PK,FK
+        string registro_profesional
+        string especialidad
+    }
+    SECRETARIO {
+        int id_empleado PK,FK
+        string turno
+    }
+    AUXILIAR {
+        int id_empleado PK,FK
+        string area_apoyo
+    }
+    CITA {
+        int id_registro PK,FK
+        string tipo_cita
+        time hora
+    }
+    VACUNACION {
+        int id_registro PK,FK
+        string tipo_vacuna
+        string dosis
+    }
+    CLIENTE {
+        int id_cliente PK
+        int id_veterinaria FK
+        string nombre_cli
+        string apellido_cli
+        string telefono_cli
+        string direccion_cli
+        string correo
+    }
+    FACTURA {
+        int id_factura PK
+        int id_cliente FK
+        int numero_factura UK
+        float monto
+    }
+    ANIMAL {
+        int id_animal PK
+        int id_cliente FK
+        string nombre_animal
+        string raza
+        string sexo
+    }
+    HISTORIAL_CLINICO {
+        int id_historial PK
+        int id_animal FK,UK
+        int numero_registro
+        date fecha_apertura
+    }
+    REGISTRO_CLINICO {
+        int id_registro PK
+        int id_historial FK
+        date fecha_registro
+        string observacion
+    }
+    HOSPITALIZACION {
+        int id_registro PK,FK
+        int duracion
+        string sala
+    }
+
+    VETERINARIA ||--o{ SUCURSAL : id_veterinaria
+    SUCURSAL ||--o| INVENTARIO : id_sucursal
+    INVENTARIO ||--o{ ELEMENTO_MEDICO : id_inventario
+    INVENTARIO ||--o{ MEDICAMENTO : id_inventario
+    VETERINARIA ||--o{ EMPLEADO : id_veterinaria
+    EMPLEADO ||--o| VETERINARIO : id_empleado
+    EMPLEADO ||--o| SECRETARIO : id_empleado
+    EMPLEADO ||--o| AUXILIAR : id_empleado
+    VETERINARIA ||--o{ CLIENTE : id_veterinaria
+    CLIENTE ||--o{ FACTURA : id_cliente
+    CLIENTE ||--o{ ANIMAL : id_cliente
+    ANIMAL ||--o| HISTORIAL_CLINICO : id_animal
+    HISTORIAL_CLINICO ||--o{ REGISTRO_CLINICO : id_historial
+    REGISTRO_CLINICO ||--o| CITA : id_registro
+    REGISTRO_CLINICO ||--o| VACUNACION : id_registro
+    REGISTRO_CLINICO ||--o| TRATAMIENTO : id_registro
+    REGISTRO_CLINICO ||--o| HOSPITALIZACION : id_registro
+```
+
+## Relaciones del modelo
+
+**Convenciones:** atributo <u>subrayado</u> = **PK**; **(FK)** = clave foránea; **(UK)** = atributo único. En las especializaciones, una clave primaria también puede funcionar como clave foránea.
 
 1. **VETERINARIA**(<u>id_veterinaria</u>, nombre_vet, direccion_vet)
 2. **SUCURSAL**(<u>id_sucursal</u>, id_veterinaria (FK), direccion_suc, telefono_suc)
@@ -29,7 +161,7 @@ Este modelo reproduce las **18 relaciones, los nombres y el orden de los atribut
 
 ## Enlaces entre las relaciones
 
-Las siguientes referencias corresponden a las **17 claves foráneas del SQL**; se emplean como conexiones entre relaciones en ERDPlus.
+Las siguientes referencias corresponden a las **17 claves foráneas del SQL** y muestran la correspondencia entre las tablas.
 
 | Relación dependiente (FK) | Referencia a la PK | Restricción |
 | --- | --- | --- |
