@@ -1,194 +1,64 @@
-# Modelo relacional de PetManager: estructura seleccionada hasta 5FN
+# Modelo relacional de PetManager - 5FN
 
-[Volver al apartado de normalización](./README.md) · [Ver esquema SQL](../../SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql)
+[Volver a normalización](./README.md) · [Excel original](../../Modelo%20Relacional/Modelo%20Relacional%20Normalizado/ModeloRelacionalNormalizadoPetManager.xlsx) · [SQL de las 18 tablas](../../SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql)
 
-Este modelo corresponde a las **18 tablas implementadas en MySQL**, cuya estructura se mantuvo en la revisión desde 1FN hasta **5FN**, incluida BCNF, según las dependencias y reglas de negocio documentadas en el informe. **No corresponde a la descomposición de 54 tablas de 6FN**.
+Este modelo reproduce las **18 relaciones, los nombres y el orden de los atributos de la hoja `5FN` del Excel**. Utiliza la convención de la notación relacional de **ERDPlus**: el nombre de la relación seguido de sus atributos y la clave primaria subrayada. El SQL implementa estas 18 tablas.
 
-## Diagrama completo de las 18 tablas
+## Modelo relacional en notación de ERDPlus
 
-```mermaid
-erDiagram
-    VETERINARIA {
-        INT id_veterinaria PK
-        VARCHAR nombre_vet
-        VARCHAR direccion_vet
-    }
-    SUCURSAL {
-        INT id_sucursal PK
-        INT id_veterinaria FK
-        VARCHAR direccion_suc
-        VARCHAR telefono_suc
-    }
-    INVENTARIO {
-        INT id_inventario PK
-        INT id_sucursal FK,UK
-        INT numero_stock
-    }
-    ELEMENTO_MEDICO {
-        INT id_elemento PK
-        INT id_inventario FK
-        VARCHAR funcion
-        VARCHAR marca
-        VARCHAR tipo_elemento
-        INT cantidad
-    }
-    MEDICAMENTO {
-        INT id_medicamento PK
-        INT id_inventario FK
-        VARCHAR tipo_medicamento
-        VARCHAR presentacion
-        VARCHAR dosis
-        INT cantidad
-    }
-    EMPLEADO {
-        INT id_empleado PK
-        INT id_veterinaria FK
-        VARCHAR nombre_emp
-        VARCHAR apellido_emp
-        VARCHAR telefono_emp
-        VARCHAR direccion_emp
-        DECIMAL salario
-    }
-    VETERINARIO {
-        INT id_empleado PK,FK
-        VARCHAR registro_profesional
-        VARCHAR especialidad
-    }
-    SECRETARIO {
-        INT id_empleado PK,FK
-        VARCHAR turno
-    }
-    AUXILIAR {
-        INT id_empleado PK,FK
-        VARCHAR area_apoyo
-    }
-    CLIENTE {
-        INT id_cliente PK
-        INT id_veterinaria FK
-        VARCHAR nombre_cli
-        VARCHAR apellido_cli
-        VARCHAR telefono_cli
-        VARCHAR direccion_cli
-        VARCHAR correo
-    }
-    FACTURA {
-        INT id_factura PK
-        INT id_cliente FK
-        INT numero_factura UK
-        DECIMAL monto
-    }
-    ANIMAL {
-        INT id_animal PK
-        INT id_cliente FK
-        VARCHAR nombre_animal
-        VARCHAR raza
-        VARCHAR sexo
-    }
-    HISTORIAL_CLINICO {
-        INT id_historial PK
-        INT id_animal FK,UK
-        INT numero_registro
-        DATE fecha_apertura
-    }
-    REGISTRO_CLINICO {
-        INT id_registro PK
-        INT id_historial FK
-        DATE fecha_registro
-        TEXT observacion "admite NULL"
-    }
-    CITA {
-        INT id_registro PK,FK
-        VARCHAR tipo_cita
-        TIME hora
-    }
-    VACUNACION {
-        INT id_registro PK,FK
-        VARCHAR tipo_vacuna
-        VARCHAR dosis
-    }
-    TRATAMIENTO {
-        INT id_registro PK,FK
-        VARCHAR receta_medica
-        VARCHAR indicaciones
-    }
-    HOSPITALIZACION {
-        INT id_registro PK,FK
-        INT duracion
-        VARCHAR sala
-    }
+**Convenciones:** atributo <u>subrayado</u> = **PK**; **(FK)** = clave foránea; **(UK)** = unicidad adicional. Una PK también puede funcionar como FK en las especializaciones.
 
-    VETERINARIA ||--o{ SUCURSAL : id_veterinaria
-    SUCURSAL ||--o| INVENTARIO : id_sucursal
-    INVENTARIO ||--o{ ELEMENTO_MEDICO : id_inventario
-    INVENTARIO ||--o{ MEDICAMENTO : id_inventario
-    VETERINARIA ||--o{ EMPLEADO : id_veterinaria
-    EMPLEADO ||--o| VETERINARIO : id_empleado
-    EMPLEADO ||--o| SECRETARIO : id_empleado
-    EMPLEADO ||--o| AUXILIAR : id_empleado
-    VETERINARIA ||--o{ CLIENTE : id_veterinaria
-    CLIENTE ||--o{ FACTURA : id_cliente
-    CLIENTE ||--o{ ANIMAL : id_cliente
-    ANIMAL ||--o| HISTORIAL_CLINICO : id_animal
-    HISTORIAL_CLINICO ||--o{ REGISTRO_CLINICO : id_historial
-    REGISTRO_CLINICO ||--o| CITA : id_registro
-    REGISTRO_CLINICO ||--o| VACUNACION : id_registro
-    REGISTRO_CLINICO ||--o| TRATAMIENTO : id_registro
-    REGISTRO_CLINICO ||--o| HOSPITALIZACION : id_registro
-```
+1. **VETERINARIA**(<u>id_veterinaria</u>, nombre_vet, direccion_vet)
+2. **SUCURSAL**(<u>id_sucursal</u>, id_veterinaria (FK), direccion_suc, telefono_suc)
+3. **INVENTARIO**(<u>id_inventario</u>, id_sucursal (FK) (UK), numero_stock)
+4. **ELEMENTO_MEDICO**(<u>id_elemento</u>, id_inventario (FK), funcion, marca, tipo_elemento, cantidad)
+5. **MEDICAMENTO**(<u>id_medicamento</u>, id_inventario (FK), tipo_medicamento, presentacion, dosis, cantidad)
+6. **TRATAMIENTO**(<u>id_registro</u> (FK), receta_medica, indicaciones)
+7. **EMPLEADO**(<u>id_empleado</u>, id_veterinaria (FK), nombre_emp, apellido_emp, telefono_emp, direccion_emp, salario)
+8. **VETERINARIO**(<u>id_empleado</u> (FK), registro_profesional, especialidad)
+9. **SECRETARIO**(<u>id_empleado</u> (FK), turno)
+10. **AUXILIAR**(<u>id_empleado</u> (FK), area_apoyo)
+11. **CITA**(<u>id_registro</u> (FK), tipo_cita, hora)
+12. **VACUNACION**(<u>id_registro</u> (FK), tipo_vacuna, dosis)
+13. **CLIENTE**(<u>id_cliente</u>, id_veterinaria (FK), nombre_cli, apellido_cli, telefono_cli, direccion_cli, correo)
+14. **FACTURA**(<u>id_factura</u>, id_cliente (FK), numero_factura (UK), monto)
+15. **ANIMAL**(<u>id_animal</u>, id_cliente (FK), nombre_animal, raza, sexo)
+16. **HISTORIAL_CLINICO**(<u>id_historial</u>, id_animal (FK) (UK), numero_registro, fecha_apertura)
+17. **REGISTRO_CLINICO**(<u>id_registro</u>, id_historial (FK), fecha_registro, observacion)
+18. **HOSPITALIZACION**(<u>id_registro</u> (FK), duracion, sala)
 
-**Leyenda:** PK = clave primaria; FK = clave foránea; UK = restricción de unicidad. Los tipos se presentan resumidos en el diagrama; las longitudes y precisiones exactas están en el [script SQL](../../SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql). Solo `registro_clinico.observacion` admite `NULL` entre los atributos declarados.
+## Enlaces entre las relaciones
 
-## Esquema de relaciones
+Las siguientes referencias corresponden a las **17 claves foráneas del SQL**; se emplean como conexiones entre relaciones en ERDPlus.
 
-| Tabla | Clave primaria (PK) | Clave foránea (FK) | Otros atributos |
-| --- | --- | --- | --- |
-| `veterinaria` | `id_veterinaria` | — | `nombre_vet`, `direccion_vet` |
-| `sucursal` | `id_sucursal` | `id_veterinaria` → `veterinaria.id_veterinaria` | `direccion_suc`, `telefono_suc` |
-| `inventario` | `id_inventario` | `id_sucursal` → `sucursal.id_sucursal` | `numero_stock` |
-| `elemento_medico` | `id_elemento` | `id_inventario` → `inventario.id_inventario` | `funcion`, `marca`, `tipo_elemento`, `cantidad` |
-| `medicamento` | `id_medicamento` | `id_inventario` → `inventario.id_inventario` | `tipo_medicamento`, `presentacion`, `dosis`, `cantidad` |
-| `empleado` | `id_empleado` | `id_veterinaria` → `veterinaria.id_veterinaria` | `nombre_emp`, `apellido_emp`, `telefono_emp`, `direccion_emp`, `salario` |
-| `veterinario` | `id_empleado` | `id_empleado` → `empleado.id_empleado` | `registro_profesional`, `especialidad` |
-| `secretario` | `id_empleado` | `id_empleado` → `empleado.id_empleado` | `turno` |
-| `auxiliar` | `id_empleado` | `id_empleado` → `empleado.id_empleado` | `area_apoyo` |
-| `cliente` | `id_cliente` | `id_veterinaria` → `veterinaria.id_veterinaria` | `nombre_cli`, `apellido_cli`, `telefono_cli`, `direccion_cli`, `correo` |
-| `factura` | `id_factura` | `id_cliente` → `cliente.id_cliente` | `numero_factura`, `monto` |
-| `animal` | `id_animal` | `id_cliente` → `cliente.id_cliente` | `nombre_animal`, `raza`, `sexo` |
-| `historial_clinico` | `id_historial` | `id_animal` → `animal.id_animal` | `numero_registro`, `fecha_apertura` |
-| `registro_clinico` | `id_registro` | `id_historial` → `historial_clinico.id_historial` | `fecha_registro`, `observacion` |
-| `cita` | `id_registro` | `id_registro` → `registro_clinico.id_registro` | `tipo_cita`, `hora` |
-| `vacunacion` | `id_registro` | `id_registro` → `registro_clinico.id_registro` | `tipo_vacuna`, `dosis` |
-| `tratamiento` | `id_registro` | `id_registro` → `registro_clinico.id_registro` | `receta_medica`, `indicaciones` |
-| `hospitalizacion` | `id_registro` | `id_registro` → `registro_clinico.id_registro` | `duracion`, `sala` |
-
-## Correspondencia de las 17 claves foráneas
-
-| Clave en la tabla hija | Referencia | Cardinalidad desde la tabla padre |
+| Relación dependiente (FK) | Referencia a la PK | Restricción |
 | --- | --- | --- |
-| `sucursal.id_veterinaria` | `veterinaria.id_veterinaria` | Varios hijos posibles |
-| `inventario.id_sucursal` | `sucursal.id_sucursal` | Como máximo un hijo por padre |
-| `elemento_medico.id_inventario` | `inventario.id_inventario` | Varios hijos posibles |
-| `medicamento.id_inventario` | `inventario.id_inventario` | Varios hijos posibles |
-| `empleado.id_veterinaria` | `veterinaria.id_veterinaria` | Varios hijos posibles |
-| `veterinario.id_empleado` | `empleado.id_empleado` | Como máximo un hijo por padre |
-| `secretario.id_empleado` | `empleado.id_empleado` | Como máximo un hijo por padre |
-| `auxiliar.id_empleado` | `empleado.id_empleado` | Como máximo un hijo por padre |
-| `cliente.id_veterinaria` | `veterinaria.id_veterinaria` | Varios hijos posibles |
-| `factura.id_cliente` | `cliente.id_cliente` | Varios hijos posibles |
-| `animal.id_cliente` | `cliente.id_cliente` | Varios hijos posibles |
-| `historial_clinico.id_animal` | `animal.id_animal` | Como máximo un hijo por padre |
-| `registro_clinico.id_historial` | `historial_clinico.id_historial` | Varios hijos posibles |
-| `cita.id_registro` | `registro_clinico.id_registro` | Como máximo un hijo por padre |
-| `vacunacion.id_registro` | `registro_clinico.id_registro` | Como máximo un hijo por padre |
-| `tratamiento.id_registro` | `registro_clinico.id_registro` | Como máximo un hijo por padre |
-| `hospitalizacion.id_registro` | `registro_clinico.id_registro` | Como máximo un hijo por padre |
+| `SUCURSAL.id_veterinaria` | `VETERINARIA.id_veterinaria` | Varias filas hijas posibles |
+| `INVENTARIO.id_sucursal` | `SUCURSAL.id_sucursal` | Una fila hija por identificador de padre, como máximo |
+| `ELEMENTO_MEDICO.id_inventario` | `INVENTARIO.id_inventario` | Varias filas hijas posibles |
+| `MEDICAMENTO.id_inventario` | `INVENTARIO.id_inventario` | Varias filas hijas posibles |
+| `EMPLEADO.id_veterinaria` | `VETERINARIA.id_veterinaria` | Varias filas hijas posibles |
+| `VETERINARIO.id_empleado` | `EMPLEADO.id_empleado` | Una fila hija por identificador de padre, como máximo |
+| `SECRETARIO.id_empleado` | `EMPLEADO.id_empleado` | Una fila hija por identificador de padre, como máximo |
+| `AUXILIAR.id_empleado` | `EMPLEADO.id_empleado` | Una fila hija por identificador de padre, como máximo |
+| `CLIENTE.id_veterinaria` | `VETERINARIA.id_veterinaria` | Varias filas hijas posibles |
+| `FACTURA.id_cliente` | `CLIENTE.id_cliente` | Varias filas hijas posibles |
+| `ANIMAL.id_cliente` | `CLIENTE.id_cliente` | Varias filas hijas posibles |
+| `HISTORIAL_CLINICO.id_animal` | `ANIMAL.id_animal` | Una fila hija por identificador de padre, como máximo |
+| `REGISTRO_CLINICO.id_historial` | `HISTORIAL_CLINICO.id_historial` | Varias filas hijas posibles |
+| `CITA.id_registro` | `REGISTRO_CLINICO.id_registro` | Una fila hija por identificador de padre, como máximo |
+| `VACUNACION.id_registro` | `REGISTRO_CLINICO.id_registro` | Una fila hija por identificador de padre, como máximo |
+| `TRATAMIENTO.id_registro` | `REGISTRO_CLINICO.id_registro` | Una fila hija por identificador de padre, como máximo |
+| `HOSPITALIZACION.id_registro` | `REGISTRO_CLINICO.id_registro` | Una fila hija por identificador de padre, como máximo |
 
-Las relaciones 1:1 representadas con FK única permiten **cero o un hijo por padre**; no obligan a que todos los padres tengan una fila hija. Además, que un subtipo utilice PK y FK compartidas no impone por sí solo exclusividad entre subtipos.
+## Correspondencia con el Excel y el SQL
 
-## Aclaración sobre 5FN y 6FN
+- **Excel:** los atributos y las claves PK, FK y UK coinciden con la hoja `5FN`. Se respetan los nombres y el orden por relación, así como las 18 relaciones documentadas.
+- **Tipos:** el Excel expresa dominios generales (`int`, `string`, `float`, `date`, `time`). El SQL concreta `string` como `VARCHAR` o `TEXT`, y `float` para montos y salarios como `DECIMAL`, sin modificar el propósito del atributo.
+- **Obligatoriedad:** los atributos señalados como `NN` en Excel son `NOT NULL` en SQL. Las claves primarias también son obligatorias. `registro_clinico.observacion` admite `NULL`.
+- **Atributo derivado:** `cantidad_total` no es una columna física. Se calcula a partir de las cantidades de medicamentos y elementos médicos.
+- **Normalización:** bajo las dependencias documentadas, el modelo se conserva en **18 relaciones desde 1FN hasta 5FN**, incluida BCNF. La descomposición de **54 relaciones en 6FN** se documentó como un ejercicio, pero no se implementó.
 
-- **1FN a 5FN:** se conservan las 18 tablas de acuerdo con las dependencias declaradas; esta es la versión usada en SQL.
-- **6FN:** el informe documenta una descomposición académica en 54 tablas (18 tablas base y 36 proyecciones adicionales), que no se implementó.
-- La pertenencia a 5FN depende de las **dependencias de reunión y reglas de negocio**, por lo que no se demuestra únicamente contando tablas o revisando PK/FK.
+> **Para exponer:** «El Excel muestra las mismas 18 relaciones que implementamos en SQL. Se revisaron las dependencias hasta quinta forma normal y, bajo las reglas del modelo, no fue necesaria una nueva descomposición. Las claves subrayadas identifican cada relación y las claves foráneas muestran cómo se enlazan».
 
-[Informe de normalización](../../Modelo%20Relacional/Informe%20de%20Normalizaci%C3%B3n/Informe_Normalizacion_PetManager.pdf) · [Excel del modelo relacional](../../Modelo%20Relacional/Modelo%20Relacional%20Normalizado/ModeloRelacionalNormalizadoPetManager.xlsx)
+[Informe de normalización](../../Modelo%20Relacional/Informe%20de%20Normalizaci%C3%B3n/Informe_Normalizacion_PetManager.pdf) · [Siguiente: esquema SQL](../04_Base_de_datos_en_SQL/)
