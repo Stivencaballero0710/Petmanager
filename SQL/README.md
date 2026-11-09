@@ -1,6 +1,6 @@
 # Base de datos en SQL
 
-[Volver al inicio](../README.md) · [Notebook de la presentación](../Sustentaci%C3%B3n/PetManager_Proyecto_Final.ipynb)
+[Volver al inicio](../README.md) · [Recorrido de la sustentación](../Sustentaci%C3%B3n/)
 
 La implementación de PetManager contiene **18 tablas, 17 claves foráneas y 230 registros**, acompañados de consultas sobre la información clínica y administrativa. Los scripts están escritos para **MySQL 8.0**, con tablas InnoDB y caracteres UTF-8.
 
