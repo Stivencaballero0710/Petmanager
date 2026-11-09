@@ -12,6 +12,7 @@ PetManager organiza la información de una veterinaria: sucursales, personal, cl
 | [Modelo E-R](./Modelo%20E-R/) | Investigación, documento y diagramas de la primera entrega. |
 | [Modelo Relacional](./Modelo%20Relacional/) | Excel del modelo e informe de normalización de la segunda entrega. |
 | [SQL](./SQL/) | Creación de la base, tablas, carga de datos y consultas. |
+| [Sustentación](./Sustentaci%C3%B3n/) | Material de la presentación final del proyecto. |
 
 ## Alcance de la entrega
 
