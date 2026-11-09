@@ -17,4 +17,4 @@
 | 9 | Inventarios que requieren revisión | 3 |
 | 10 | Mascotas con hospitalizaciones prolongadas | 3 |
 
-Los resultados corresponden a la carga inicial. Si cambias los datos, también pueden cambiar los conteos. El [notebook](../../Sustentaci%C3%B3n/PetManager_Proyecto_Final.ipynb) presenta cada pregunta, el SQL y la tabla obtenida.
+Los resultados corresponden a la carga inicial. Si cambias los datos, también pueden cambiar los conteos. La [interpretación de resultados](./resultados_consultas.md) reúne las preguntas, las consultas y sus resultados.
