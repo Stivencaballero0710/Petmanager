@@ -4,10 +4,8 @@ El esquema contiene 18 tablas y 17 claves foráneas. Se crean primero las tablas
 
 Se utiliza `DECIMAL` para salarios y montos. `cita.hora` es `TIME`, mientras que la fecha de atención se obtiene de `registro_clinico.fecha_registro`. El inventario conserva `numero_stock` como dato cargado; `cantidad_total` es un atributo derivado que no se almacena en una columna.
 
-La creación nativa se realiza con los scripts de MySQL. La demostración ejecutable del notebook utiliza SQLite en memoria: elimina `USE`, `AUTO_INCREMENT` y `ENGINE=InnoDB`, y cambia `START TRANSACTION` por `BEGIN TRANSACTION`. Los identificadores ya están presentes en los datos y se activan las FK. Las consultas conservan sus sentencias SQL.
-
-
+La base de datos se implementa con los scripts de **MySQL 8.0** disponibles en el repositorio. El esquema se puede revisar desde GitHub y ejecutar en MySQL Workbench siguiendo la guía SQL.
 
 [Esquema completo](../../SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql) · [Orden de ejecución](../../SQL/README.md) · [Ajustes del esquema](../../SQL/03_Modificaciones/)
 
-[Volver a la sustentación](../README.md) · [Abrir notebook](../PetManager_Proyecto_Final.ipynb)
+[Volver al índice de la sustentación](../README.md) · [Siguiente: Carga de datos](../05_Carga_de_datos/)
