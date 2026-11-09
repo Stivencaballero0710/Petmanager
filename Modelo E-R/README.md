@@ -4,23 +4,23 @@
 
 [Volver al inicio del repositorio](../README.md) · [Consultar la segunda entrega](../Modelo%20Relacional/)
 
-Esta carpeta reúne todos los archivos de la primera entrega. Aquí se presenta el problema de información de una clínica veterinaria, la investigación que apoyó la propuesta y el modelo entidad-relación construido a partir de ese análisis.
+Esta carpeta reúne los archivos de la primera entrega: el análisis del problema de información de una clínica veterinaria, la investigación del dominio y el modelo entidad-relación.
 
 ## Organización de la entrega
 
 | Carpeta | Contenido | Archivo principal |
 | --- | --- | --- |
-| [Documento](./Documento/) | Documento consolidado con contexto, alcance, tendencias, comparación de herramientas y referencias. | [Leer primera entrega](./Documento/README.md) |
-| [Modelo](./Modelo/) | Diagramas utilizados durante el proceso de modelado. | [Ver modelo E-R de la entrega](./Modelo/Modelo_Entidad_Relacion.png) |
-| [Investigacion](./Investigacion/) | Exploración inicial del dominio y de sistemas de gestión veterinaria. | [Leer exploración](./Investigacion/Exploracion.md) |
+| [Documento](./Documento/) | Documento consolidado con contexto, alcance, tendencias, comparación de herramientas y referencias. | [Primera entrega](./Documento/README.md) |
+| [Modelo](./Modelo/) | Diagramas utilizados durante el proceso de modelado. | [Modelo E-R](./Modelo/Modelo_Entidad_Relacion.png) |
+| [Investigacion](./Investigacion/) | Exploración inicial del dominio y de sistemas de gestión veterinaria. | [Exploración](./Investigacion/Exploracion.md) |
 
-## Qué se desarrolla
+## Contenido
 
-- El contexto del problema y las necesidades de información de la veterinaria.
-- Los conceptos del dominio y las reglas de negocio consideradas en la propuesta.
-- Las tendencias del sector y su relación con el diseño de datos.
-- La revisión de herramientas de gestión veterinaria.
-- El modelo entidad-relación y las referencias de la investigación.
+- Contexto del problema y necesidades de información de la veterinaria.
+- Conceptos del dominio y reglas de negocio.
+- Tendencias del sector y su relación con el diseño de datos.
+- Herramientas de gestión veterinaria.
+- Modelo entidad-relación y referencias de la investigación.
 
 ## Diagrama de la primera entrega
 
@@ -28,14 +28,8 @@ Esta carpeta reúne todos los archivos de la primera entrega. Aquí se presenta 
 
 [Ver diagrama en tamaño completo](./Modelo/Modelo_Entidad_Relacion.png) · [Consultar la primera propuesta](./Modelo/Primera_Propuesta.png)
 
-La primera propuesta se conserva como antecedente del proceso. Para revisar el modelo utilizado en la entrega, consulta `Modelo_Entidad_Relacion.png`.
-
-## Orden de lectura
-
-1. Lee el [documento consolidado](./Documento/README.md).
-2. Consulta el [modelo E-R](./Modelo/README.md) y sus diagramas.
-3. Revisa la [exploración inicial](./Investigacion/Exploracion.md) cuando necesites consultar los antecedentes.
+La primera propuesta se conserva como antecedente del proceso. El diagrama utilizado en la entrega se encuentra en `Modelo_Entidad_Relacion.png`.
 
 ## Continuación del proyecto
 
-A partir de las entidades y relaciones del modelo E-R se construyó el modelo relacional. Su archivo de Excel y el informe de normalización se encuentran en [Modelo Relacional](../Modelo%20Relacional/).
+A partir de las entidades y relaciones del modelo E-R se construyó el modelo relacional, disponible en [Modelo Relacional](../Modelo%20Relacional/).

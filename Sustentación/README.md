@@ -2,31 +2,13 @@
 
 [Volver al inicio](../README.md)
 
-**[Comenzar: 1. Análisis de la situación](./01_Analisis_de_la_situacion/)**
+La documentación se organiza de acuerdo con los seis apartados del proyecto.
 
-La presentación se organiza en seis apartados y tiene una duración máxima de **15 minutos**. Participan los cinco integrantes del grupo. Los diagramas, el Excel, el informe y los scripts se encuentran en sus carpetas correspondientes.
-
-## Recorrido de los seis puntos
-
-| Punto | Apartado | Tiempo |
-| --- | --- | --- |
-| 1. Análisis de la situación | [Problema, objetivo y alcance](./01_Analisis_de_la_situacion/) | 1 min 30 s |
-| 2. Modelo entidad-relación | [Entidades y relaciones](./02_Modelo_Entidad_Relacion/) | 2 min 30 s |
-| 3. Modelo relacional y normalización | [Claves y formas normales](./03_Modelo_relacional_y_normalizacion/) | 3 min |
-| 4. Base de datos construida en SQL (esquema) | [Tablas y restricciones](./04_Base_de_datos_en_SQL/) | 2 min 30 s |
-| 5. Carga de datos (mínimo 5 registros por tabla) | [Registros por tabla](./05_Carga_de_datos/) | 1 min |
-| 6. Diez consultas sobre la base de datos | [Preguntas y resultados](./06_Consultas_SQL/) | 4 min |
-| Transiciones y cierre | Resumen del resultado | 30 s |
-| **Total** | | **15 min** |
-
-## Distribución entre los integrantes
-
-| Integrante | Intervención | Tiempo |
-| --- | --- | --- |
-| Juan Sebastián Araujo Contreras | Análisis de la situación. | 1 min 30 s |
-| Juan Pablo Vera Suárez | Modelo entidad-relación. | 2 min 30 s |
-| Jannyer Stiven Caballero Domínguez | Modelo relacional y normalización. | 3 min |
-| Andrés Felipe Rivera Carreño | Base de datos construida en SQL (esquema). | 2 min 30 s |
-| Carlos Iván Merlano Vergara | Carga de datos (1 min) y diez consultas (4 min). | 5 min |
-| **Transiciones y cierre** | **Tiempo compartido por el equipo.** | **30 s** |
-
+| Punto | Apartado |
+| --- | --- |
+| 1. Análisis de la situación | [Problema, objetivo y alcance](./01_Analisis_de_la_situacion/) |
+| 2. Modelo entidad-relación | [Entidades y relaciones](./02_Modelo_Entidad_Relacion/) |
+| 3. Modelo relacional y normalización | [Claves y formas normales](./03_Modelo_relacional_y_normalizacion/) |
+| 4. Base de datos construida en SQL | [Tablas y restricciones](./04_Base_de_datos_en_SQL/) |
+| 5. Carga de datos | [Registros por tabla](./05_Carga_de_datos/) |
+| 6. Consultas SQL | [Consultas y resultados](./06_Consultas_SQL/) |
