@@ -20,4 +20,4 @@ La notación 1:1 del diseño se implementa con una FK única en la tabla hija: a
 
 [Ver el diagrama completo](../../Modelo%20E-R/Modelo/Modelo_Entidad_Relacion.png)
 
-[Volver a la sustentación](../README.md) · [Abrir notebook](../PetManager_Proyecto_Final.ipynb)
+[Volver al índice de la sustentación](../README.md) · [Siguiente: Modelo relacional y normalización](../03_Modelo_relacional_y_normalizacion/)
