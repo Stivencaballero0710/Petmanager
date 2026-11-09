@@ -29,4 +29,4 @@ En 6FN, los atributos obligatorios requieren cobertura de los identificadores de
 
 [Excel del modelo](../../Modelo%20Relacional/Modelo%20Relacional%20Normalizado/ModeloRelacionalNormalizadoPetManager.xlsx) · [Informe de normalización](../../Modelo%20Relacional/Informe%20de%20Normalizaci%C3%B3n/Informe_Normalizacion_PetManager.pdf)
 
-[Volver a la sustentación](../README.md) · [Abrir notebook](../PetManager_Proyecto_Final.ipynb)
+[Volver al índice de la sustentación](../README.md) · [Siguiente: Esquema SQL](../04_Base_de_datos_en_SQL/)
