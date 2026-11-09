@@ -2,8 +2,6 @@
 
 [Volver a normalización](./README.md) · [Excel original](../../Modelo%20Relacional/Modelo%20Relacional%20Normalizado/ModeloRelacionalNormalizadoPetManager.xlsx) · [SQL de las 18 tablas](../../SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql)
 
-Este modelo presenta las **18 relaciones de la hoja `5FN` del Excel**, con los mismos nombres y atributos. Es la estructura implementada en SQL.
-
 ## Diagrama del modelo relacional
 
 ```mermaid
