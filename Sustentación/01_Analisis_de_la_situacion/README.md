@@ -19,4 +19,4 @@ La entrega implementa estas funciones con 18 tablas. La exploración inicial tam
 
 [Exploración de la primera entrega](../../Modelo%20E-R/Documento/README.md)
 
-[Volver a la sustentación](../README.md) · [Abrir notebook](../PetManager_Proyecto_Final.ipynb)
+[Volver al índice de la sustentación](../README.md) · [Siguiente: Modelo entidad-relación](../02_Modelo_Entidad_Relacion/)
