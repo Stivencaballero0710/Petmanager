@@ -20,4 +20,4 @@ Las consultas responden preguntas sobre clientes, salarios, medicamentos, invent
 
 [Consultas SQL](../../SQL/05_Consultas/consultas.sql) · [Interpretación de resultados](../../SQL/05_Consultas/resultados_consultas.md)
 
-[Volver a la sustentación](../README.md) · [Abrir notebook](../PetManager_Proyecto_Final.ipynb)
+[Volver al índice de la sustentación](../README.md) · [Volver al inicio del repositorio](../../README.md)
