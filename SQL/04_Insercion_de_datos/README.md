@@ -31,4 +31,4 @@ Los registros se distribuyen de la siguiente manera:
 
 Los empleados se distribuyen en diez veterinarios, diez secretarios y diez auxiliares. Los 40 registros clínicos se distribuyen en diez citas, diez vacunaciones, diez tratamientos y diez hospitalizaciones. Las filas de los subtipos comparten el identificador de su registro principal.
 
-Estos conteos se obtuvieron al ejecutar la carga en la demostración SQLite del notebook. El conjunto de datos no se amplió ni se sustituyeron nombres, montos o cantidades.
+El conjunto de datos no se amplió ni se sustituyeron nombres, montos o cantidades.
