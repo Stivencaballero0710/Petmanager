@@ -14,34 +14,13 @@ Primero se transformó el diseño entidad-relación en tablas. A cada entidad se
 
 **Idea para explicar:** el modelo E-R indica cómo se relacionan los datos; el modelo relacional organiza esas relaciones en tablas que luego pueden implementarse en SQL.
 
-## Modelo relacional implementado (revisión hasta 5FN)
+## Modelo relacional de 5FN (notación ERDPlus)
 
-El modelo definitivo conserva las **18 tablas y 17 claves foráneas** del esquema SQL. Este diagrama resume sus relaciones para la exposición; en el enlace están todos los atributos y las claves.
+El modelo implementado tiene **18 relaciones** y **17 claves foráneas**. La representación sigue la **hoja `5FN` del Excel**: claves primarias subrayadas, claves foráneas señaladas y los mismos atributos.
 
-**[Abrir el modelo relacional completo de 5FN](./Modelo_Relacional_5FN.md)**
+**[Abrir el modelo relacional completo (5FN)](./Modelo_Relacional_5FN.md)**
 
-```mermaid
-erDiagram
-    VETERINARIA ||--o{ SUCURSAL : id_veterinaria
-    SUCURSAL ||--o| INVENTARIO : id_sucursal
-    INVENTARIO ||--o{ ELEMENTO_MEDICO : id_inventario
-    INVENTARIO ||--o{ MEDICAMENTO : id_inventario
-    VETERINARIA ||--o{ EMPLEADO : id_veterinaria
-    EMPLEADO ||--o| VETERINARIO : id_empleado
-    EMPLEADO ||--o| SECRETARIO : id_empleado
-    EMPLEADO ||--o| AUXILIAR : id_empleado
-    VETERINARIA ||--o{ CLIENTE : id_veterinaria
-    CLIENTE ||--o{ FACTURA : id_cliente
-    CLIENTE ||--o{ ANIMAL : id_cliente
-    ANIMAL ||--o| HISTORIAL_CLINICO : id_animal
-    HISTORIAL_CLINICO ||--o{ REGISTRO_CLINICO : id_historial
-    REGISTRO_CLINICO ||--o| CITA : id_registro
-    REGISTRO_CLINICO ||--o| VACUNACION : id_registro
-    REGISTRO_CLINICO ||--o| TRATAMIENTO : id_registro
-    REGISTRO_CLINICO ||--o| HOSPITALIZACION : id_registro
-```
-
-**Para explicar:** «Este es el modelo que se llevó a SQL. Aunque en el ejercicio de 6FN se obtuvieron 54 tablas, la implementación conserva estas 18 relaciones, revisadas hasta 5FN bajo las dependencias definidas».
+**Ejemplo para explicar:** `ANIMAL` tiene la PK `id_animal` y la FK `id_cliente`, que referencia a `CLIENTE`. Así se pasa del modelo entidad-relación al modelo relacional sin repetir los datos del propietario.
 
 ## Proceso de normalización
 
