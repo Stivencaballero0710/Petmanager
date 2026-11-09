@@ -2,6 +2,6 @@
 
 [Volver a SQL](../README.md)
 
-[ejemplos.sql](./ejemplos.sql) muestra un cambio de teléfono y la eliminación de una hospitalización. Cada ejemplo inicia una transacción y termina con `ROLLBACK`, de modo que la carga inicial queda restaurada.
+[ejemplos.sql](./ejemplos.sql) contiene dos operaciones: la actualización del teléfono de un cliente y la eliminación de una hospitalización. Cada operación se ejecuta dentro de una transacción que finaliza con `ROLLBACK`, por lo que los datos iniciales se conservan.
 
-Este apartado conserva el espacio de práctica que ya tenía el repositorio. Es opcional y no se cuenta entre las consultas solicitadas para la entrega final. Ejecútalo completo, en una misma conexión y con las tablas InnoDB.
+Los ejemplos requieren tablas InnoDB y deben ejecutarse en una misma conexión.
