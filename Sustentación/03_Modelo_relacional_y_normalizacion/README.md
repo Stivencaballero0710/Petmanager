@@ -19,26 +19,11 @@ El modelo relacional está compuesto por **18 relaciones** y **17 claves foráne
 
 ### Diagrama del modelo relacional
 
-```mermaid
-erDiagram
-    VETERINARIA ||--o{ SUCURSAL : id_veterinaria
-    SUCURSAL ||--o| INVENTARIO : id_sucursal
-    INVENTARIO ||--o{ ELEMENTO_MEDICO : id_inventario
-    INVENTARIO ||--o{ MEDICAMENTO : id_inventario
-    VETERINARIA ||--o{ EMPLEADO : id_veterinaria
-    EMPLEADO ||--o| VETERINARIO : id_empleado
-    EMPLEADO ||--o| SECRETARIO : id_empleado
-    EMPLEADO ||--o| AUXILIAR : id_empleado
-    VETERINARIA ||--o{ CLIENTE : id_veterinaria
-    CLIENTE ||--o{ FACTURA : id_cliente
-    CLIENTE ||--o{ ANIMAL : id_cliente
-    ANIMAL ||--o| HISTORIAL_CLINICO : id_animal
-    HISTORIAL_CLINICO ||--o{ REGISTRO_CLINICO : id_historial
-    REGISTRO_CLINICO ||--o| CITA : id_registro
-    REGISTRO_CLINICO ||--o| VACUNACION : id_registro
-    REGISTRO_CLINICO ||--o| TRATAMIENTO : id_registro
-    REGISTRO_CLINICO ||--o| HOSPITALIZACION : id_registro
-```
+<p align="center">
+  <img src="./Modelo_Relacional_PetManager.svg" alt="Diagrama relacional de PetManager realizado en MySQL Workbench" width="100%">
+</p>
+
+[Ver diagrama SVG en tamaño completo](./Modelo_Relacional_PetManager.svg)
 
 **[Modelo relacional completo](./Modelo_Relacional_5FN.md)**
 
