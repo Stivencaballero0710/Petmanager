@@ -12,7 +12,7 @@ El diagrama presenta las 18 tablas con los tipos utilizados en SQL. La [correspo
   </a>
 </p>
 
-[Ampliar diagrama SVG](https://raw.githubusercontent.com/Stivencaballero0710/Petmanager/main/Sustentaci%C3%B3n/03_Modelo_relacional_y_normalizacion/Modelo_Relacional_PetManager.svg) · [Abrir archivo SVG](./Modelo_Relacional_PetManager.svg)
+[Ampliar diagrama SVG](https://raw.githubusercontent.com/Stivencaballero0710/Petmanager/main/Sustentaci%C3%B3n/03_Modelo_relacional_y_normalizacion/Modelo_Relacional_PetManager.svg) · [Abrir archivo SVG](./Modelo_Relacional_PetManager.svg) · [Modelo editable de MySQL Workbench (.mwb)](./Modelo_Relacional_PetManager.mwb)
 
 ## Consideraciones de implementación
 
