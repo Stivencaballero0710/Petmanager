@@ -20,10 +20,12 @@ El modelo relacional está compuesto por **18 relaciones** y **17 claves foráne
 ### Diagrama del modelo relacional
 
 <p align="center">
-  <img src="./Modelo_Relacional_PetManager.svg" alt="Diagrama relacional de PetManager realizado en MySQL Workbench" width="100%">
+  <a href="https://raw.githubusercontent.com/Stivencaballero0710/Petmanager/main/Sustentaci%C3%B3n/03_Modelo_relacional_y_normalizacion/Modelo_Relacional_PetManager.svg">
+    <img src="./Modelo_Relacional_PetManager.svg" alt="Diagrama relacional completo de PetManager" width="100%">
+  </a>
 </p>
 
-[Ver diagrama SVG en tamaño completo](./Modelo_Relacional_PetManager.svg) · [Abrir modelo editable en MySQL Workbench (.mwb)](./Modelo_Relacional_PetManager.mwb)
+[Ampliar diagrama SVG](https://raw.githubusercontent.com/Stivencaballero0710/Petmanager/main/Sustentaci%C3%B3n/03_Modelo_relacional_y_normalizacion/Modelo_Relacional_PetManager.svg) · [Abrir archivo SVG](./Modelo_Relacional_PetManager.svg) · [Abrir modelo editable en MySQL Workbench (.mwb)](./Modelo_Relacional_PetManager.mwb)
 
 **[Modelo relacional completo](./Modelo_Relacional_5FN.md)**
 
