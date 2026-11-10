@@ -1,6 +1,6 @@
 # 5. Carga de datos al modelo
 
-El archivo de carga contiene 230 registros. Las entidades principales se insertan antes de sus tablas dependientes y cada `INSERT` indica explícitamente sus columnas.
+El archivo de carga contiene 230 registros. Las entidades principales se insertan antes de sus tablas dependientes y los valores de cada `INSERT INTO` siguen el orden de las columnas de su tabla.
 
 Hay 30 empleados, 40 registros clínicos y 10 registros en cada una de las otras 16 tablas. Los 40 registros clínicos corresponden a diez citas, diez vacunaciones, diez tratamientos y diez hospitalizaciones. Se cumple el requisito de al menos cinco registros por tabla.
 
@@ -31,3 +31,4 @@ Hay 30 empleados, 40 registros clínicos y 10 registros en cada una de las otras
 [Carga de datos](../../SQL/04_Insercion_de_datos/registros.sql)
 
 [Volver al índice de la sustentación](../README.md) · [Siguiente: Diez consultas SQL](../06_Consultas_SQL/)
+

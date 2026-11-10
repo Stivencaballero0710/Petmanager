@@ -8,4 +8,5 @@ Las PK identifican cada fila; las 17 FK mantienen las referencias. `inventario.i
 
 El esquema conserva las 18 tablas de la propuesta de implementación. Las 54 tablas del ejercicio en 6FN permanecen documentadas en la segunda entrega y no se crean en este script.
 
-Consulta las [decisiones del esquema](../03_Modificaciones/) y continúa con la [carga de datos](../04_Insercion_de_datos/).
+[Características del esquema](../03_Modificaciones/) · [Carga de datos](../04_Insercion_de_datos/)
+

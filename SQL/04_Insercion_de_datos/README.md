@@ -2,7 +2,7 @@
 
 [Volver a SQL](../README.md)
 
-[registros.sql](./registros.sql) contiene los datos del proyecto. Cada `INSERT` indica sus columnas y las filas referenciadas por las claves foráneas se cargan primero. La carga se ejecuta una sola vez sobre las tablas vacías.
+[registros.sql](./registros.sql) contiene los datos del proyecto. Las sentencias `INSERT INTO` registran los valores de cada tabla en el orden de sus columnas. Primero se cargan las entidades principales y después las tablas que dependen de ellas.
 
 Los registros se distribuyen de la siguiente manera:
 
@@ -30,3 +30,4 @@ Los registros se distribuyen de la siguiente manera:
 **Total: 230 registros.** Todas las tablas tienen al menos diez filas.
 
 Los empleados se distribuyen en diez veterinarios, diez secretarios y diez auxiliares. Los 40 registros clínicos se distribuyen en diez citas, diez vacunaciones, diez tratamientos y diez hospitalizaciones. Las filas de los subtipos comparten el identificador de su registro principal.
+

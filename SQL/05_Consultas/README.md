@@ -17,4 +17,5 @@
 | 9 | Inventarios que requieren revisión | 3 |
 | 10 | Mascotas con hospitalizaciones prolongadas | 3 |
 
-Los resultados corresponden a la carga inicial. Si cambias los datos, también pueden cambiar los conteos. La [interpretación de resultados](./resultados_consultas.md) reúne las preguntas, las consultas y sus resultados.
+Los resultados corresponden a los registros del proyecto. La [interpretación de resultados](./resultados_consultas.md) reúne las preguntas, las consultas y sus resultados.
+

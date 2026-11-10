@@ -1,8 +1,8 @@
 # Resultados de las consultas
 
-[Consultas SQL](./consultas.sql) · [Volver a la guía](./README.md)
+[Consultas SQL](./consultas.sql) · [Volver a consultas](./README.md)
 
-Resultados obtenidos al ejecutar las consultas en MySQL Workbench sobre los datos de la carga inicial de `registros.sql`.
+Resultados de las consultas sobre los datos de `registros.sql`.
 
 ## 1. Clientes con mascotas de determinadas razas
 
@@ -63,3 +63,4 @@ Filtrar el valor almacenado en numero_stock cuando es menor que 100 o mayor que 
 Encontrar mascotas con una hospitalización de más de tres días.
 
 **Resultado (3 filas):** Rocky (4 días), Nala (5 días) y Lola (4 días).
+

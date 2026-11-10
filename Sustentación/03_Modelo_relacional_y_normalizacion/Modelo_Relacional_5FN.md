@@ -2,6 +2,8 @@
 
 [Volver a normalización](./README.md) · [Modelo relacional en Excel](../../Modelo%20Relacional/Modelo%20Relacional%20Normalizado/ModeloRelacionalNormalizadoPetManager.xlsx) · [Esquema SQL](../../SQL/02_Creacion_de_tablas/basededatosVeterinaria.sql)
 
+El diagrama presenta las 18 tablas con los tipos utilizados en SQL. La [correspondencia entre el modelo y la implementación](../../SQL/03_Modificaciones/) describe los dominios y la obligatoriedad de los atributos.
+
 ## Diagrama del modelo relacional
 
 ```mermaid
@@ -68,7 +70,7 @@ erDiagram
     CITA {
         int id_registro PK,FK
         string tipo_cita
-        time hora
+        timestamp hora
     }
     VACUNACION {
         int id_registro PK,FK
@@ -136,10 +138,11 @@ erDiagram
 
 ## Consideraciones de implementación
 
-- `registro_clinico.observacion` es opcional y admite valores `NULL`.
-- `cita.hora` utiliza el tipo `TIME`; la fecha de atención se almacena en `registro_clinico.fecha_registro`.
+- `registro_clinico.observacion` es `TEXT NOT NULL`; cada registro incluye una observación.
+- `cita.hora` utiliza `TIMESTAMP` y conserva la fecha y la hora de la cita.
 - Los montos y salarios utilizan los tipos `DECIMAL(12,2)` y `DECIMAL(10,2)`, respectivamente.
 - `numero_stock` es el campo de inventario almacenado. `cantidad_total` no se implementa como columna física.
 - Las claves foráneas únicas limitan a un inventario por sucursal y a un historial clínico por animal.
 
 [Informe de normalización](../../Modelo%20Relacional/Informe%20de%20Normalizaci%C3%B3n/Informe_Normalizacion_PetManager.pdf) · [Siguiente: Esquema SQL](../04_Base_de_datos_en_SQL/)
+

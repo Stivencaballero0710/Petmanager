@@ -18,11 +18,11 @@ PetManager organiza la información de una veterinaria: sucursales, personal, cl
 
 Se implementan **18 tablas con 17 claves foráneas**. Hay 30 empleados, 40 registros clínicos y 10 filas en cada una de las otras 16 tablas. Se mantienen las 18 tablas analizadas hasta 5FN bajo los supuestos del informe; la descomposición en 54 tablas de 6FN se conserva como ejercicio de normalización.
 
-La exploración inicial consideró más funcionalidades que las implementadas. El alcance final y sus diferencias respecto a la propuesta inicial se explican en las [decisiones del esquema](./SQL/03_Modificaciones/).
+Las [características del esquema](./SQL/03_Modificaciones/) describen los tipos de datos, las restricciones y las relaciones implementadas.
 
-## Ejecutar el proyecto
+## Base de datos
 
-En MySQL Workbench, sigue el [orden de los scripts](./SQL/README.md) para crear el esquema, cargar los registros y ejecutar las consultas.
+Los [archivos SQL](./SQL/README.md) contienen la creación de la base de datos, las tablas, los registros y las consultas del proyecto.
 
 ## Integrantes
 
@@ -33,3 +33,4 @@ En MySQL Workbench, sigue el [orden de los scripts](./SQL/README.md) para crear 
 | Andrés Felipe Rivera Carreño | 2250193 |
 | Juan Sebastián Araujo Contreras | 2250142 |
 | Juan Pablo Vera Suárez | 2241807 |
+

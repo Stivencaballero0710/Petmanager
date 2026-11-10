@@ -1,16 +1,24 @@
-# Decisiones de implementación
+# Características del esquema
 
 [Volver a SQL](../README.md) · [Modelo relacional](../../Modelo%20Relacional/)
 
-Las siguientes decisiones forman parte del esquema implementado. No es necesario ejecutar instrucciones `ALTER TABLE` después de crear las tablas.
+El esquema define los tipos de datos y las restricciones de las tablas de PetManager.
 
 | Elemento | Implementación |
 | --- | --- |
-| `registro_clinico.observacion` | Es un campo opcional y admite `NULL`. |
-| `cita.hora` | Se almacena como `TIME`; la fecha de atención se registra en `registro_clinico.fecha_registro`. |
+| `registro_clinico.observacion` | Se almacena como `TEXT NOT NULL`; cada registro clínico incluye una observación. |
+| `cita.hora` | Se almacena como `TIMESTAMP` e incluye la fecha y la hora de la cita. |
 | Montos y salarios | Se utilizan `DECIMAL(12,2)` para montos y `DECIMAL(10,2)` para salarios. |
-| Motor de almacenamiento | Las tablas utilizan InnoDB y las claves foráneas mantienen la integridad referencial. |
-| Inserciones | Cada sentencia `INSERT` especifica las columnas que recibe. |
+
+## Del modelo relacional al SQL
+
+| Atributo | Modelo relacional | Implementación SQL |
+| --- | --- | --- |
+| `cita.hora` | Dominio `time`. | `TIMESTAMP NOT NULL`: almacena fecha y hora. |
+| `registro_clinico.observacion` | Atributo opcional. | `TEXT NOT NULL`: la implementación exige una observación. |
+| `salario` y `monto` | Dominio numérico. | `DECIMAL`: almacena los valores con dos decimales. |
+
+Las entidades, las claves y sus relaciones se conservan. La definición SQL establece los tipos y la obligatoriedad de los campos que se utilizan en la base de datos.
 
 ## Restricciones y alcance
 
@@ -20,3 +28,4 @@ Las siguientes decisiones forman parte del esquema implementado. No es necesario
 - Las claves primarias compartidas no obligan a que cada empleado o registro clínico tenga un subtipo ni establecen exclusividad entre subtipos.
 - `correo`, `registro_profesional` y `numero_registro` no tienen restricciones `UNIQUE` en el esquema.
 - La factura se relaciona directamente con el cliente. El esquema no incluye detalle de facturas, pagos, asignación de veterinarios a citas, usuarios ni permisos.
+
