@@ -1,3 +1,5 @@
+USE petmanager;
+
 -- 1. VETERINARIA
 INSERT INTO veterinaria VALUES
 (1,'Vet Salud','Calle 10 #20-30'),

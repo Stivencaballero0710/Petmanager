@@ -1,3 +1,5 @@
+USE petmanager;
+
 -- 1. Consultar los clientes que tienen mascotas Labrador, Golden Retriever o Beagle.
 
 SELECT nombre_cli, apellido_cli, telefono_cli, correo
